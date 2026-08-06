@@ -1202,6 +1202,10 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 }
+.hol-col-text {
+  display: flex;
+  flex-direction: column;
+}
 .sec-night .hol-grid h2 {
   color: #fff;
 }
