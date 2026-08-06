@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.oceanichosteria.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oceanichosteria.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oceanichosteria.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.oceanichosteria.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-06-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.oceanichosteria.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oceanichosteria.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oceanichosteria.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.oceanichosteria.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-06-24</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.oceanichosteria.com/retiros-holisticos-puerto-lopez/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+
+  <url>
+  <loc>https://www.oceanichosteria.com/retiros-holisticos-puerto-lopez/en</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <lastmod>2026-08-06</lastmod>
+</url>
+
+</urlset>

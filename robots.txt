@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# No indexar carpeta de uso interno si existe
+Disallow: /admin/
+Disallow: /img/frases/
+
+Sitemap: https://www.oceanichosteria.com/sitemap.xml

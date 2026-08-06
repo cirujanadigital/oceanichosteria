@@ -1,0 +1,31 @@
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Contenido de marketing/redes — no pertenece al repo del sitio
+img/frases/
+img/*.zip
+
+# Herramienta de conversión (no se despliega)
+cwebp.exe
+
+# Videos pesados — se suben directo por FTP/File Manager a Hostinger, no por git
+*.mp4
+
+# PDF pesado del menú — se sube directo por FTP/File Manager
+img/MENU-RESTAURANTE-OCEANIC.pdf
+
+# Originales sin optimizar: ya usamos los .webp equivalentes en el HTML
+img/*.jpg
+img/*.jpeg
+img/*.png
+retiros-holisticos-puerto-lopez/*.jpg
+retiros-holisticos-puerto-lopez/*.jpeg
+retiros-holisticos-puerto-lopez/*.png
+
+# Excepciones: estos SÍ deben subirse aunque sean png (favicons, iconos, OG)
+!img/og-image.png
+!img/android-chrome-*.png
+!img/apple-touch-icon.png
+!img/favicon-*.png

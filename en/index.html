@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hostería Oceanic · Alojamiento familiar frente al mar · Puerto López, Ecuador</title>
+  <title>Oceanic Hostería · Family Beachfront Lodging · Puerto López, Ecuador</title>
   <meta name="description"
-    content="Hostería Oceanic es una hostería familiar frente al mar en el sector norte de Puerto López, Ecuador. 14 cabañas y habitaciones con jardines, piscina climatizada en temporada de frío, desayuno incluido y restaurante de cocina manabita. Reservas: +593 99 593 0635.">
+    content="Oceanic Hostería is a family-run beachfront lodge in the north sector of Puerto López, Ecuador. 14 cabins and rooms with gardens, heated pool in the cold season, breakfast included and a restaurant serving Manabí-style cuisine. Reservations: +593 99 593 0635.">
   <meta name="google-site-verification" content="QJ1Q7pUSjxxh3UFAwYzE2fNfUupoTRzcJD6m_wkEayw" />
-  <meta property="og:title" content="Hostería Oceanic · Puerto López, Ecuador">
+  <meta property="og:title" content="Oceanic Hostería · Puerto López, Ecuador">
   <meta property="og:description"
-    content="14 cabañas familiares frente al Pacífico. Piscina, jardines, desayuno incluido y cocina manabita. Sector norte del malecón de Puerto López.">
-  <meta property="og:url" content="https://www.oceanichosteria.com">
+    content="14 family cabins facing the Pacific. Pool, gardens, breakfast included and Manabí cuisine. North sector of the Puerto López boardwalk.">
+  <meta property="og:url" content="https://www.oceanichosteria.com/en">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_EC">
+  <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://www.oceanichosteria.com/img/og-image.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.oceanichosteria.com/img/og-image.webp">
-  <link rel="canonical" href="https://www.oceanichosteria.com">
-  <link rel="icon" type="image/webp" sizes="16x16" href="img/favicon-16x16.webp">
-  <link rel="icon" type="image/webp" sizes="32x32" href="img/favicon-32x32.webp">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.webp">
+  <link rel="canonical" href="https://www.oceanichosteria.com/en">
+  <link rel="icon" type="image/webp" sizes="16x16" href="/img/favicon-16x16.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="/img/favicon-32x32.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.webp">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="alternate" hreflang="es" href="https://www.oceanichosteria.com">
   <link rel="alternate" hreflang="en" href="https://www.oceanichosteria.com/en">
   <link rel="alternate" hreflang="x-default" href="https://www.oceanichosteria.com">
-
-  <!-- CSS crítico inline -->
+  <!-- Inline critical CSS  -->
   <style>
     :root {
       --sky: #5B9EC9;
@@ -57,19 +56,18 @@
       background: var(--white)
     }
 
-    /* ══════════════════════════════════════════════════════════
-   HERO — layout tipo Neutralia, estilo Oceanic
-══════════════════════════════════════════════════════════ */
-
+    /*
+   HERO
+*/
     .hero {
       position: relative;
       overflow: hidden;
       padding-block: clamp(5rem, 12vw, 8rem);
       padding-top: calc(66px + clamp(3rem, 8vw, 5rem));
-      /* compensa nav fijo */
+      /* offsets fixed nav */
     }
 
-    /* Imagen de fondo */
+    /* Background image */
     .hero-bg {
       position: absolute;
       inset: 0;
@@ -83,7 +81,7 @@
       object-position: center 30%;
     }
 
-    /* Overlay degradado oscuro — legibilidad del texto */
+    /* Dark gradient overlay — text legibility */
     .hero-overlay {
       position: absolute;
       inset: 0;
@@ -93,7 +91,7 @@
           rgba(8, 30, 45, 0.30) 100%);
     }
 
-    /* Layout interno: texto izq + círculos der */
+    /* Inner layout: left text + right circles */
     .hero-inner {
       position: relative;
       z-index: 1;
@@ -110,8 +108,7 @@
       }
     }
 
-    /* ── TEXTO ─────────────────────────────────────────── */
-
+    /* ── TEXT ─────────────────────────────────────────── */
     .hero-eyebrow {
       display: inline-block;
       font-size: var(--t-xs);
@@ -158,7 +155,6 @@
     }
 
     /* ── CTAs ─────────────────────────────────────────── */
-
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
@@ -166,7 +162,7 @@
       margin-bottom: 1.75rem;
     }
 
-    /* Llamar — outline ámbar */
+    /* Call — amber outline */
     .btn-call {
       display: inline-flex;
       align-items: center;
@@ -190,8 +186,7 @@
       border-color: #fff;
     }
 
-    /* ── RESEÑAS ──────────────────────────────────────── */
-
+    /* ── REVIEWS ──────────────────────────────────────── */
     .hero-rating {
       display: flex;
       align-items: center;
@@ -206,7 +201,7 @@
       line-height: 1;
     }
 
-    /* Media estrella: recorta la última al 50% */
+    /* Half star: clips the last one to 50% */
     .star-half {
       display: inline-block;
       width: 0.55em;
@@ -220,8 +215,7 @@
       font-weight: 500;
     }
 
-    /* ── RRSS ─────────────────────────────────────────── */
-
+    /* ── SOCIAL ─────────────────────────────────────────── */
     .hero-social {
       display: flex;
       gap: 0.75rem;
@@ -246,13 +240,12 @@
       background: rgba(245, 166, 35, 0.1);
     }
 
-    /* ── CÍRCULOS ─────────────────────────────────────── */
-
+    /* ── CIRCLES ─────────────────────────────────────── */
     .hero-circles {
       position: relative;
       height: 420px;
       display: none;
-      /* oculto en mobile */
+      /* hidden on mobile */
     }
 
     @media (min-width: 900px) {
@@ -267,7 +260,7 @@
       overflow: hidden;
     }
 
-    /* Marco decorativo: doble anillo tipo Neutralia */
+    /* Decorative frame: double ring, Neutralia-style */
     .hero-circle::before,
     .hero-circle::after {
       content: '';
@@ -278,13 +271,13 @@
       z-index: 2;
     }
 
-    /* Anillo exterior ámbar */
+    /* Amber outer ring */
     .hero-circle::before {
       box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.55),
         0 0 0 8px rgba(245, 166, 35, 0.12);
     }
 
-    /* Sombra profunda */
+    /* Deep shadow */
     .hero-circle::after {
       box-shadow: inset 0 0 24px rgba(8, 30, 45, 0.30);
     }
@@ -297,7 +290,7 @@
       display: block;
     }
 
-    /* Círculo principal — más grande, arriba a la izquierda */
+    /* Main circle — larger, top left */
     .hero-circle--top {
       width: 300px;
       height: 300px;
@@ -306,14 +299,14 @@
       z-index: 1;
     }
 
-    /* Círculo secundario — más pequeño, abajo a la derecha, solapado */
+    /* Secondary circle — smaller, bottom right, overlapping */
     .hero-circle--bottom {
       width: 220px;
       height: 220px;
       bottom: 0;
       right: 0;
       z-index: 2;
-      /* Acento: anillo en azul Oceanic para el segundo */
+      /* Accent: blue ring for the Oceanic second circle */
     }
 
     .hero-circle--bottom::before {
@@ -321,7 +314,7 @@
         0 0 0 8px rgba(91, 158, 201, 0.12);
     }
 
-    /* Conector visual entre los dos círculos — línea curva sutil */
+    /* Visual connector between the two circles — subtle curved line */
     .hero-circles::after {
       content: '';
       position: absolute;
@@ -335,26 +328,24 @@
       z-index: 0;
     }
   </style>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w"
     imagesizes="100vw">
-
-  <!-- Schema JSON-LD  -->
-
+  <!-- Schema JSON-LD —  -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": ["Hotel", "LodgingBusiness"],
-      "@id": "https://www.oceanichosteria.com/#hotel",
-      "name": "Hostería Oceanic",
-      "url": "https://www.oceanichosteria.com",
+      "@id": "https://www.oceanichosteria.com/en/#hotel",
+      "name": "Oceanic Hostería",
+      "url": "https://www.oceanichosteria.com/en/",
       "telephone": "+593995930635",
-      "description": "Hostería familiar frente al mar en el sector norte de Puerto López, Manabí, Ecuador. 14 cabañas y habitaciones con jardines, piscina climatizada en temporada de frío, desayuno incluido y restaurante de cocina manabita.",
+      "description": "Family-run beachfront lodge in the north sector of Puerto López, Manabí, Ecuador. 14 cabins and rooms with gardens, heated pool in the cold season, breakfast included and a restaurant serving Manabí cuisine.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Malecón Julio Izurieta S/N, sector norte",
+        "streetAddress": "Malecón Julio Izurieta S/N, north sector",
         "addressLocality": "Puerto López",
         "addressRegion": "Manabí",
         "addressCountry": "EC"
@@ -374,21 +365,21 @@
       "checkinTime": "14:00",
       "checkoutTime": "11:00",
       "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Piscina climatizada", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Heated pool", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Restaurante", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Estacionamiento gratuito", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Aire acondicionado", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Desayuno incluido", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Jardín privado", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Balcón con hamaca", "value": true }
+        { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Breakfast included", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Private garden", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Balcony with hammock", "value": true }
       ],
       "numberOfRooms": 14,
       "petsAllowed": true,
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "350+",
+        "reviewCount": "+350",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -397,19 +388,19 @@
           "@type": "Review",
           "author": { "@type": "Person", "name": "Adriana Massanti" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Entorno, paz y tranquilidad. Sin contaminación sonora, eso es fundamental en unas vacaciones. Lo recomiendo al cien por cien."
+          "reviewBody": "Setting, peace and quiet. No noise pollution, which is essential on vacation. I recommend it one hundred percent."
         },
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Yamila Kloster" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Cabañas impecables, muy espaciosas. Ubicación tranquila y lejos del ruido del centro, ideal para descansar."
+          "reviewBody": "Spotless, very spacious cabins. Quiet location, away from the noise of downtown — ideal for resting."
         },
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Renatto Ledesma" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Me casé en esta hostería y fue mágico. La comida riquísima, mejor que un hotel de 5 estrellas."
+          "reviewBody": "I got married at this lodge and it was magical. Delicious food, better than a 5-star hotel."
         }
       ],
       "sameAs": [
@@ -420,78 +411,78 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.oceanichosteria.com/#faq",
+      "@id": "https://www.oceanichosteria.com/en/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿El desayuno está incluido en Hostería Oceanic?",
+          "name": "Is breakfast included at Oceanic Hostería?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. El desayuno está incluido para todos los huéspedes. Horario: 08:00 a 10:00 h. Pasado ese horario tiene un costo de $5 por persona."
+            "text": "Yes. Breakfast is included for all guests. Hours: 8:00 to 10:00 AM. After that time it costs $5 per person."
           }
         },
         {
           "@type": "Question",
-          "name": "¿La piscina de Hostería Oceanic está climatizada?",
+          "name": "Is the pool at Oceanic Hostería heated?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. La piscina está climatizada en temporada de frío. Horario de uso: 10:00 a 22:00 h (temporada de sol) y hasta las 20:00 h (temporada fría)."
+            "text": "Yes. The pool is heated during the cold season. Hours: 10:00 AM to 10:00 PM (sunny season) and until 8:00 PM (cold season)."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Cómo hago una reserva en Hostería Oceanic?",
+          "name": "How do I make a reservation at Oceanic Hostería?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Por WhatsApp o llamada al +593 99 593 0635. Para confirmar la reserva se requiere un depósito del 25% del total de la estadía. Check-in: 14:00 h. Check-out: 11:00 h."
+            "text": "Via WhatsApp or call +593 99 593 0635. A 25% deposit of the total stay is required to confirm the reservation. Check-in: 2:00 PM. Check-out: 11:00 AM."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Hostería Oceanic es apta para familias con niños?",
+          "name": "Is Oceanic Hostería suitable for families with children?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Tenemos cabañas independientes para hasta 6 personas con literas para niños. Los adultos son responsables de los menores dentro del predio."
+            "text": "Yes. We have independent cabins for up to 6 people with bunk beds for children. Adults are responsible for minors on the property."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Dónde está ubicada Hostería Oceanic?",
+          "name": "Where is Oceanic Hostería located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Malecón Julio Izurieta S/N, sector norte, Puerto López, Manabí, Ecuador. A 10 minutos caminando del centro, en la zona más tranquila del malecón, frente al Pacífico. Parqueadero gratuito disponible."
+            "text": "Malecón Julio Izurieta S/N, north sector, Puerto López, Manabí, Ecuador. A 10-minute walk from downtown, in the quietest area of the boardwalk, facing the Pacific. Free parking available."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Hostería Oceanic tiene WiFi?",
+          "name": "Does Oceanic Hostería have WiFi?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Hay conexión WiFi disponible para todos los huéspedes."
+            "text": "Yes. WiFi is available for all guests."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Hay aire acondicionado en las habitaciones de Hostería Oceanic?",
+          "name": "Is there air conditioning in the rooms at Oceanic Hostería?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Todas las habitaciones y cabañas cuentan con aire acondicionado."
+            "text": "Yes. All rooms and cabins have air conditioning."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué distancia hay hasta Playa Los Frailes desde Hostería Oceanic?",
+          "name": "How far is Los Frailes Beach from Oceanic Hostería?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Playa Los Frailes se encuentra aproximadamente a 15 minutos en vehículo desde la hostería, dentro del Parque Nacional Machalilla."
+            "text": "Los Frailes Beach is approximately a 15-minute drive from the lodge, within Machalilla National Park."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Hostería Oceanic acepta mascotas?",
+          "name": "Does Oceanic Hostería allow pets?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Se aceptan mascotas pequeñas y medianas bajo responsabilidad de sus propietarios."
+            "text": "Yes. Small and medium-sized pets are allowed under their owners' responsibility."
           }
         }
       ]
@@ -499,17 +490,16 @@
   ]
 }
 </script>
-
 </head>
 
 <body>
+
   <main id="main">
     <header class="nav" role="banner" id="nav">
       <div class="nav-inner">
         <a href="#" class="nav-logo" aria-label="Hostería Oceanic — Inicio">
-          <img src="img/logo.webp" alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140" height="78"
-            loading="eager" decoding="sync">
-
+          <img src="../img/logo-full.webp" alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140"
+            height="78" loading="eager" decoding="sync">
         </a>
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
@@ -520,7 +510,7 @@
             <li><a href="/retiros-holisticos-puerto-lopez/index.html">Retiros</a></li>
           </ul>
         </nav>
-        <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20en%20Hoster%C3%ADa%20Oceanic"
+        <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20at%20Oceanic%20Hoster%C3%ADa"
           class="btn btn-wa nav-cta" aria-label="Consultar disponibilidad" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"
             aria-hidden="true">
@@ -531,8 +521,9 @@
           </svg>
           Reservar
         </a>
-        <a href="en/" class="lang-toggle" aria-label="English version">EN</a>
-
+        <div class="lang-switch" aria-label="Selector de idioma">
+          <a href="../" class="lang-toggle" aria-label="Versión en español">ES</a>
+        </div>
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMobile"
           aria-label="Abrir menú">
           <span></span><span></span><span></span>
@@ -544,40 +535,34 @@
         <a href="#h-turismo">Turismo</a>
         <a href="#h-resenas">Reseñas</a>
         <a href="/retiros-holisticos-puerto-lopez/index.html">Retiros</a>
-        <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20en%20Hoster%C3%ADa%20Oceanic"
+        <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20at%20Oceanic%20Hoster%C3%ADa"
           class="btn btn-wa" aria-label="Consultar disponibilidad" target="_blank" rel="noopener noreferrer">
           Reservar por WhatsApp
         </a>
+
       </nav>
     </header>
-
-    <!--   HERO -->
+    <!--      HERO -->
     <section class="hero" aria-labelledby="hero-h1">
       <div class="hero-bg">
-        <img id="heroImg" src="img/hero-oceanic-large.webp"
+        <img id="heroImg" src="/img/hero-oceanic-large.webp"
           srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w" sizes="100vw"
-          alt="Vista aérea de Hostería Oceanic — cabañas con techos de teja, piscina azul y jardines tropicales frente al Pacífico en Puerto López, Manabí, Ecuador"
+          alt="Aerial view of Oceanic Hostería — tile-roofed cabins, a blue pool and tropical gardens facing the Pacific in Puerto López, Manabí, Ecuador"
           width="1920" height="1080" fetchpriority="high" decoding="sync">
         <div class="hero-overlay"></div>
       </div>
-
       <div class="container hero-inner">
-
-        <!-- Columna izquierda: texto + CTAs -->
+        <!-- Left column: text + CTAs -->
         <div class="hero-content">
-
-          <span class="hero-eyebrow">Oceanic — Para Vivir Buenos Momentos</span>
-
-          <h1 id="hero-h1">Hostería frente al mar<br>en Puerto López</h1>
-
+          <span class="hero-eyebrow">Oceanic — Made for Good Moments</span>
+          <h1 id="hero-h1">Beachfront lodging<br>in Puerto López</h1>
           <p class="hero-sub">
-            Cabañas rodeadas de jardines tropicales, piscina y cocina manabita.
-            En el sector norte del malecón, donde las olas se escuchan y la ciudad no.
+            Cabins surrounded by tropical gardens, a pool, and Manabí-style cuisine.
+            On the quiet north end of the boardwalk, where you hear the waves — not the town.
           </p>
-
           <div class="hero-actions">
             <!-- WhatsApp -->
-            <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20en%20Hoster%C3%ADa%20Oceanic"
+            <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20at%20Oceanic%20Hoster%C3%ADa"
               class="btn btn-wa" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
                 aria-hidden="true">
@@ -586,40 +571,37 @@
                 <path
                   d="M12 0C5.373 0 0 5.373 0 12c0 2.117.551 4.103 1.516 5.825L0 24l6.335-1.496A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.016-1.376l-.36-.214-3.732.881.898-3.634-.235-.373A9.818 9.818 0 1 1 12 21.818z" />
               </svg>
-              Consultar disponibilidad
+              Check Availability
             </a>
-
-            <!-- Llamar -->
+            <!-- Call -->
             <a href="tel:+593995930635" class="btn btn-call">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              Llamar ahora
+              Call Now
             </a>
           </div>
-
-          <!-- Reseñas -->
+          <!-- Reviews -->
           <div class="hero-rating">
-            <span class="hero-stars" aria-label="4.5 sobre 5 estrellas">
+            <span class="hero-stars" aria-label="4.5 out of 5 stars">
               ★★★★<span class="star-half">★</span>
             </span>
-            <span class="hero-rating-text">4.5 · +350 reseñas en Google</span>
+            <span class="hero-rating-text">4.5 · 300+ Google reviews</span>
           </div>
-
-          <!-- RRSS -->
+          <!-- Social -->
           <div class="hero-social">
             <!-- Facebook -->
             <a href="https://www.facebook.com/OceanicHosteria" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook de Oceanic Hostería">
+              aria-label="Oceanic Hostería on Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
             <!-- Instagram -->
             <a href="https://www.instagram.com/oceanichosteria" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram de Oceanic Hostería">
+              aria-label="Oceanic Hostería on Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -629,7 +611,7 @@
             </a>
             <!-- TikTok -->
             <a href="https://www.tiktok.com/@oceanichosteria" target="_blank" rel="noopener noreferrer"
-              aria-label="TikTok de Oceanic Hostería">
+              aria-label="Oceanic Hostería on TikTok">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5
              2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01
@@ -638,102 +620,97 @@
               </svg>
             </a>
           </div>
-
         </div><!-- /hero-content -->
-
-        <!-- Columna derecha: dos imágenes circulares -->
+        <!-- Right column: two circular images -->
         <div class="hero-circles" aria-hidden="true">
-
           <div class="hero-circle-wrap hero-circle-wrap--top">
             <div class="hero-circle">
-              <img src="img/piscina.webp" alt="Piscina de Hostería Oceanic rodeada de jardines tropicales" width="340"
+              <img src="../img/piscina.webp" alt="Pool at Oceanic Hostería surrounded by tropical gardens" width="340"
                 height="340" loading="eager">
             </div>
           </div>
-
           <div class="hero-circle-wrap hero-circle-wrap--bottom">
             <div class="hero-circle">
-              <img src="img/img-oceanic-frente-cabana.webp" alt="Cabaña de Hostería Oceanic con techo de teja"
-                width="260" height="260" loading="lazy">
+              <img src="../img/img-oceanic-frente-cabana.webp" alt="Tile-roofed cabin at Oceanic Hostería" width="260"
+                height="260" loading="lazy">
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- POR QUÉ OCEANIC  -->
+    <!--      WHY OCEANIC -->
     <section class="sec sec-cream" aria-labelledby="h-porqué">
       <div class="container">
         <div style="text-align:center;">
           <div class="eyebrow" style="justify-content:center;">Puerto López, Manabí · Ecuador</div>
-          <h2 id="h-porqué">Para Vivir Buenos Momentos</h2>
+          <h2 id="h-porqué">Made for Good Moments</h2>
         </div>
         <div class="pillars">
           <div class="pillar">
             <div class="pillar-dot" aria-hidden="true"></div>
-            <h3>Sin contaminación sonora</h3>
-            <p>Estamos en el sector más tranquilo del malecón, alejados del movimiento de los bares y del tránsito del
-              centro. En Oceanic, las noches transcurren al ritmo del mar: el sonido de las olas, la brisa y la
-              naturaleza que acompaña el descanso.</p>
+            <h3>No noise pollution</h3>
+            <p>We sit in the quietest part of the boardwalk, away from the bar scene and downtown traffic.
+              At Oceanic, nights move at the pace of the sea: the sound of the waves, the breeze and the
+              nature that goes with true rest.</p>
           </div>
           <div class="pillar">
             <div class="pillar-dot" aria-hidden="true"></div>
-            <h3>Cabañas con alma propia</h3>
-            <p>Cada espacio fue pensado para sentirse como un refugio: contamos con entrada independiente, jardín propio
-              y balcón donde muchos huéspedes encuentran su momento favorito del día. Un espacio simple y acogedor para
-              desconectar, leer, contemplar el paisaje o simplemente dejar pasar las horas.</p>
+            <h3>Cabins with their own character</h3>
+            <p>Every space was designed to feel like a retreat: independent entrance, private garden
+              and a balcony that many guests call their favorite spot of the day. A simple, welcoming
+              space to disconnect, read, take in the view, or simply let the hours pass.</p>
           </div>
           <div class="pillar">
             <div class="pillar-dot" aria-hidden="true"></div>
-            <h3>A un paso del Pacífico</h3>
-            <p>A solo 30 metros de la orilla, el océano forma parte de cada momento. Es lo primero que aparece al
-              despertar y lo último que acompaña antes de dormir. Desde el predio se accede a la playa, perfecta para
-              caminar al atardecer con los pies en el agua.</p>
+            <h3>Steps from the Pacific</h3>
+            <p>Just 30 meters from the shore, the ocean is part of every moment. It's the first thing
+              you see when you wake and the last thing before you sleep. From the property you can walk
+              straight to the beach — perfect for a sunset stroll with your feet in the water.</p>
           </div>
         </div>
       </div>
     </section>
-    <!--     ALOJAMIENTO -->
+    <!-- LODGING -->
     <section class="sec sec-white" aria-labelledby="h-alojamiento">
       <div class="container">
-        <div class="eyebrow">Alojamiento</div>
-        <h2 id="h-alojamiento">14 unidades. Encuentre la ideal para usted.</h2>
+        <div class="eyebrow">Lodging</div>
+        <h2 id="h-alojamiento">14 units. Find the right one for you.</h2>
         <p style="color:var(--text-soft);margin-top:.6rem;margin-bottom:0;">
-          Cabañas independientes y habitaciones para 2 a 5 personas.
-          Todas incluyen desayuno, WiFi, agua caliente, aire acondicionado y balcón con hamaca.
+          Independent cabins and rooms for 2 to 5 people.
+          All include breakfast, WiFi, hot water, air conditioning and a balcony with a hammock.
         </p>
         <div class="rooms-grid" style="margin-top:var(--sp-lg);">
-          <!-- ─── PRESIDENCIAL  ──────────────── -->
+          <!-- ─── PRESIDENTIAL —  ──────────────── -->
           <article class="room-card room-card--featured">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de la cabaña Presidencial">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the Presidential cabin">
               <div class="room-carousel-track" tabindex="0">
                 <div class="room-carousel-slide">
-                  <img src="img/1-1.webp" alt="Cabaña Matrimonial Presidencial..." width="800" height="533"
-                    loading="eager" fetchpriority="high" decoding="sync">
+                  <img src="../img/1-1.webp" alt="Presidential Double Cabin..." width="800" height="533" loading="eager"
+                    fetchpriority="high" decoding="sync">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-1.webp"
-                    alt="Interior de la Cabaña Presidencial de Hostería Oceanic con cama de 2.5 plazas" width="800"
+                  <img src="../img/Oceanic-2-1.webp"
+                    alt="Interior of the Presidential Cabin at Oceanic Hostería with a 2.5-size bed" width="800"
                     height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-4.webp" alt="Baño privado de la Cabaña Presidencial de Hostería Oceanic"
+                  <img src="../img/Oceanic-4.webp" alt="Private bathroom of the Presidential Cabin at Oceanic Hostería"
                     width="800" height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-6.webp"
-                    alt="Balcón con hamaca de la Cabaña Presidencial frente al Pacífico en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
+                  <img src="../img/Oceanic-6.webp"
+                    alt="Balcony with hammock of the Presidential Cabin facing the Pacific at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
                 </div>
               </div>
-              <span class="room-badge">La más espaciosa</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
+              <span class="room-badge">The most spacious</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
@@ -746,61 +723,59 @@
               </div>
             </div>
             <div class="room-body">
-              <h3 class="room-name">Presidencial</h3>
-              <p class="room-sub">Cabaña independiente · 2 personas</p>
+              <h3 class="room-name">Presidential</h3>
+              <p class="room-sub">Independent cabin · 2 people</p>
               <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                La cabaña más completa de Oceanic. Cincuenta y cinco metros cuadrados con techo
-                artesanal de teca, cama de 2.5 plazas y balcón privado con vista directa al Pacífico.
-                Hamaca incluida. Rodeada de jardines propios, a pasos de la orilla. Para quienes
-                quieren lo mejor sin moverse de donde está.
+                Oceanic's most complete cabin. Fifty-five square meters with a handcrafted
+                teak roof, a 2.5-size bed, and a private balcony with a direct view of the Pacific.
+                Hammock included. Surrounded by its own gardens, steps from the shore. For those
+                who want the best without moving from where they are.
               </p>
               <div class="room-tags">
-                <span class="tag">Vista al mar</span>
-                <span class="tag">Techo de teca artesanal</span>
-                <span class="tag">Hamaca</span>
+                <span class="tag">Ocean view</span>
+                <span class="tag">Handcrafted teak roof</span>
+                <span class="tag">Hammock</span>
                 <span class="tag">55 m²</span>
-                <span class="tag">A/C 24.000 BTU</span>
-                <span class="tag">Cabaña independiente</span>
+                <span class="tag">A/C 24,000 BTU</span>
+                <span class="tag">Independent cabin</span>
               </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20la%20Caba%C3%B1a%20Presidencial"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20the%20Presidential%20Cabin"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
               </a>
             </div>
           </article>
-          <!-- ─── MATRIMONIALES ─────────────────────────── -->
+          <!-- ─── DOUBLES ─────────────────────────── -->
           <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de las cabañas Matrimoniales">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the Double cabins">
               <div class="room-carousel-track" tabindex="0">
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-1-3.webp"
-                    alt="Habitación matrimonial con vista al Pacífico en planta alta de Hostería Oceanic" width="800"
+                  <img src="../img/Oceanic-1-3.webp"
+                    alt="Double room with a Pacific view on the upper floor at Oceanic Hostería" width="800"
                     height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-5.webp"
-                    alt="Cabaña matrimonial independiente con jardín privado en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
+                  <img src="../img/Oceanic-2-5.webp"
+                    alt="Independent double cabin with private garden at Oceanic Hostería" width="800" height="533"
+                    loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-3.webp" alt="Baño privado de habitación matrimonial en Hostería Oceanic"
+                  <img src="../img/Oceanic-3-3.webp" alt="Private bathroom of a double room at Oceanic Hostería"
                     width="800" height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-1-12.webp"
-                    alt="Cama de 2.5 plazas en habitación matrimonial de Hostería Oceanic" width="800" height="533"
-                    loading="lazy" decoding="async">
+                  <img src="../img/Oceanic-1-12.webp" alt="2.5-size bed in a double room at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
                 </div>
               </div>
-              <span class="room-badge">Para 2 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
+              <span class="room-badge">For 2 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
@@ -813,58 +788,57 @@
               </div>
             </div>
             <div class="room-body">
-              <h3 class="room-name">Matrimoniales</h3>
-              <p class="room-sub">Cabaña independiente o Habitación planta alta</p>
+              <h3 class="room-name">Doubles</h3>
+              <p class="room-sub">Independent cabin or upper-floor room</p>
               <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                Dos opciones para dos personas. La cabaña independiente tiene jardín propio
-                y acceso privado. La habitación de planta alta suma vista directa al Pacífico. Ambas con cama de 2.5
-                plazas, baño privado y aire acondicionado.
+                Two options for two people. The independent cabin has its own garden
+                and private access. The upper-floor room adds a direct view of the Pacific. Both come with a 2.5-size
+                bed, private bathroom and air conditioning.
               </p>
               <div class="room-tags">
-                <span class="tag">Cama 2.5 plazas</span>
-                <span class="tag">Cabaña o habitación PA</span>
-                <span class="tag">Vista al mar</span>
-                <span class="tag">Vista al jardín</span>
-                <span class="tag">Baño privado</span>
+                <span class="tag">2.5-size bed</span>
+                <span class="tag">Cabin or upper-floor room</span>
+                <span class="tag">Ocean view</span>
+                <span class="tag">Garden view</span>
+                <span class="tag">Private bathroom</span>
                 <span class="tag">A/C</span>
               </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20alojamiento%20matrimonial"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20double%20lodging"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
               </a>
             </div>
           </article>
           <!-- ─── TRIPLES ───────────────────────────────── -->
           <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de las cabañas Triples">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the Triple cabins">
               <div class="room-carousel-track" tabindex="0">
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-1-1.webp"
-                    alt="Cabaña triple independiente con cama matrimonial y cama individual en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-2.webp" alt="Balcón con hamaca de cabaña triple en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-1.webp" alt="Jardín privado de cabaña triple en Hostería Oceanic" width="800"
+                  <img src="../img/Oceanic-1-1.webp"
+                    alt="Independent triple cabin with a double bed and a single bed at Oceanic Hostería" width="800"
                     height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-1.webp" alt="Baño privado de cabaña triple en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
+                  <img src="../img/Oceanic-2-2.webp" alt="Balcony with hammock of a triple cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-1.webp" alt="Private garden of a triple cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-1.webp" alt="Private bathroom of a triple cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
                 </div>
               </div>
-              <span class="room-badge">Para 3 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
+              <span class="room-badge">For 3 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
@@ -878,55 +852,54 @@
             </div>
             <div class="room-body">
               <h3 class="room-name">Triples</h3>
-              <p class="room-sub">Cabañas independientes · 1 ambiente</p>
+              <p class="room-sub">Independent cabins · 1 room</p>
               <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                Cabaña completamente independiente con balcón y hamaca. Cama matrimonial
-                para la pareja más una cama individual. La configuración ideal para tres:
-                familia de tres o amigos que quieren su propio espacio verde sin compartir paredes.
+                Fully independent cabin with balcony and hammock. Double bed
+                for the couple plus a single bed. The ideal setup for three:
+                a family of three or friends who want their own green space without shared walls.
               </p>
               <div class="room-tags">
-                <span class="tag">Cabaña independiente</span>
-                <span class="tag">Cama matrimonial + individual</span>
-                <span class="tag">Balcón y hamaca</span>
-                <span class="tag">Jardín</span>
+                <span class="tag">Independent cabin</span>
+                <span class="tag">Double + single bed</span>
+                <span class="tag">Balcony and hammock</span>
+                <span class="tag">Garden</span>
               </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20una%20caba%C3%B1a%20triple"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20triple%20cabin"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
               </a>
             </div>
           </article>
-          <!-- ─── CUÁDRUPLES ────────────────────────────── -->
+          <!-- ─── QUADS ────────────────────────────── -->
           <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de las cabañas Cuádruples">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the Quad cabins">
               <div class="room-carousel-track" tabindex="0">
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-1-2.webp"
-                    alt="Cabaña cuádruple familiar con cama matrimonial y dos camas individuales en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-3.webp" alt="Balcón con hamaca de cabaña cuádruple en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-2.webp" alt="Jardín privado de cabaña cuádruple en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-9.webp" alt="Baño privado de cabaña cuádruple en Hostería Oceanic" width="800"
+                  <img src="../img/Oceanic-1-2.webp"
+                    alt="Family quad cabin with a double bed and two single beds at Oceanic Hostería" width="800"
                     height="533" loading="lazy" decoding="async">
                 </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-2-3.webp" alt="Balcony with hammock of a quad cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-2.webp" alt="Private garden of a quad cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-2-9.webp" alt="Private bathroom of a quad cabin at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
               </div>
-              <span class="room-badge">Para 4 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
+              <span class="room-badge">For 4 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
@@ -939,190 +912,58 @@
               </div>
             </div>
             <div class="room-body">
-              <h3 class="room-name">Cuádruples</h3>
-              <p class="room-sub">Cabañas independientes · 1 ambiente</p>
+              <h3 class="room-name">Quads</h3>
+              <p class="room-sub">Independent cabins · 1 room</p>
               <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                Un solo ambiente bien organizado: cama matrimonial para los padres y dos
-                camas individuales para los hijos. Cabaña con balcón, hamaca y jardín propio.
-                Todo en planta baja, sin escaleras. Cómodo para una familia de cuatro que
-                viaja junta y duerme tranquila.
+                A single, well-organized room: a double bed for the parents and two
+                single beds for the kids. Cabin with balcony, hammock and its own garden.
+                Everything on the ground floor, no stairs. Comfortable for a family of four
+                traveling together and sleeping soundly.
               </p>
               <div class="room-tags">
-                <span class="tag">Cabaña independiente</span>
-                <span class="tag">Cama matrimonial + 2 individuales</span>
-                <span class="tag">Balcón y hamaca</span>
-                <span class="tag">Planta baja</span>
-                <span class="tag">Vista a la piscina</span>
+                <span class="tag">Independent cabin</span>
+                <span class="tag">Double + 2 single beds</span>
+                <span class="tag">Balcony and hammock</span>
+                <span class="tag">Ground floor</span>
+                <span class="tag">Pool view</span>
               </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20una%20caba%C3%B1a%20para%204%20personas"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20cabin%20for%204%20people"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
               </a>
             </div>
           </article>
-          <!-- ─── QUÍNTUPLE — cabaña 1 ambiente ─────────── -->
+          <!-- ─── QUINT — 1-room cabin ─────────── -->
           <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de las cabañas quíntuples con vista a la piscina">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the quint cabins with pool view">
               <div class="room-carousel-track" tabindex="0">
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-8.webp"
-                    alt="Vista a la piscina desde el balcón de cabaña quíntuple en Hostería Oceanic, Puerto López"
+                  <img src="../img/Oceanic-2-8.webp"
+                    alt="Pool view from the balcony of a quint cabin at Oceanic Hostería, Puerto López" width="800"
+                    height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-6.webp" alt="Bunk bed and beds in a quint cabin at Oceanic Hostería"
                     width="800" height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-6.webp" alt="Litera y camas de cabaña quíntuple en Hostería Oceanic"
+                  <img src="../img/Oceanic-4-3.webp" alt="Private bathroom of a quint cabin at Oceanic Hostería"
                     width="800" height="533" loading="lazy" decoding="async">
                 </div>
                 <div class="room-carousel-slide">
-                  <img src="img/Oceanic-4-3.webp" alt="Baño privado de cabaña quíntuple en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-5-3.webp" alt="Jardín y entrada privada de cabaña quíntuple en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-              </div>
-              <span class="room-badge">Para 5 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path d="M15 18l-6-6 6-6" />
-                </svg>
-              </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-              </button>
-              <div class="room-carousel-dots" aria-hidden="true">
-                <span class="room-carousel-dot is-active"></span>
-                <span class="room-carousel-dot"></span>
-                <span class="room-carousel-dot"></span>
-                <span class="room-carousel-dot"></span>
-              </div>
-            </div>
-            <div class="room-body">
-              <h3 class="room-name">Quíntuples Independientes</h3>
-              <p class="room-sub">Cabañas independientes · 1 ambiente</p>
-              <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                Cabaña independiente con cama matrimonial, cama individual y litera de dos
-                niveles. El balcón da directo a la piscina: los niños se despiertan y ya
-                la ven. Hasta 5 personas en un solo ambiente organizado y cómodo.
-              </p>
-              <div class="room-tags">
-                <span class="tag">Cabaña independiente</span>
-                <span class="tag">Balcón vista piscina</span>
-                <span class="tag">Litera incluida</span>
-                <span class="tag">Matrimonial + individual + litera</span>
-              </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20la%20caba%C3%B1a%20qu%C3%ADntuple%20vista%20piscina"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
-              </a>
-            </div>
-          </article>
-          <!-- ─── QUÍNTUPLE — cabaña 3 ambientes ────────── -->
-          <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de la cabaña quíntuple de tres ambientes">
-              <div class="room-carousel-track" tabindex="0">
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-2-4.webp"
-                    alt="Dormitorio de cabaña quíntuple de tres ambientes en Hostería Oceanic con vistas panorámicas"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-9.webp"
-                    alt="Sala con sofá de cabaña quíntuple de tres ambientes en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-9.webp"
-                    alt="Segundo dormitorio de cabaña quíntuple de tres ambientes en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic5-4.webp"
-                    alt="Vista panorámica al Pacífico desde cabaña quíntuple de tres ambientes en Hostería Oceanic"
-                    width="800" height="533" loading="lazy" decoding="async">
-                </div>
-              </div>
-              <span class="room-badge">Para 5 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path d="M15 18l-6-6 6-6" />
-                </svg>
-              </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-              </button>
-              <div class="room-carousel-dots" aria-hidden="true">
-                <span class="room-carousel-dot is-active"></span>
-                <span class="room-carousel-dot"></span>
-                <span class="room-carousel-dot"></span>
-                <span class="room-carousel-dot"></span>
-              </div>
-            </div>
-            <div class="room-body">
-              <h3 class="room-name">Quíntuple · 3 ambientes</h3>
-              <p class="room-sub">Planta alta · Mayor privacidad</p>
-              <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                La opción con más privacidad de la familia. Tres ambientes completamente
-                separados: dormitorio principal con cama matrimonial, segundo cuarto con
-                cama doble e individual, y sala propia con sofás. Dos baños completos.
-                Planta alta con vistas panorámicas al Pacífico y las montañas de Manabí.
-              </p>
-              <div class="room-tags">
-                <span class="tag">3 ambientes separados</span>
-                <span class="tag">2 baños completos</span>
-                <span class="tag">Sala con sofá</span>
-                <span class="tag">Vista panorámica</span>
-                <span class="tag">Planta alta</span>
-              </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20la%20caba%C3%B1a%20qu%C3%ADntuple%20de%203%20ambientes"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
-              </a>
-            </div>
-          </article>
-          <!-- ─── QUÍNTUPLE — habitaciones 2 ambientes ──── -->
-          <article class="room-card">
-            <div class="room-carousel" role="group" aria-roledescription="carrusel"
-              aria-label="Fotos de las habitaciones quíntuples de dos ambientes">
-              <div class="room-carousel-track" tabindex="0">
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-11.webp"
-                    alt="Habitación quíntuple de dos ambientes en Hostería Oceanic, Puerto López" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-11.webp"
-                    alt="Literas y sofá del segundo ambiente de habitación quíntuple en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-11.webp"
-                    alt="Cuarto privado con cama doble de habitación quíntuple en Hostería Oceanic" width="800"
-                    height="533" loading="lazy" decoding="async">
-                </div>
-                <div class="room-carousel-slide">
-                  <img src="img/Oceanic-3-11.webp"
-                    alt="Balcón de habitación quíntuple de planta alta en Hostería Oceanic" width="800" height="533"
+                  <img src="../img/Oceanic-5-3.webp"
+                    alt="Garden and private entrance of a quint cabin at Oceanic Hostería" width="800" height="533"
                     loading="lazy" decoding="async">
                 </div>
               </div>
-              <span class="room-badge">Para 5 personas</span>
-              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Foto anterior">
+              <span class="room-badge">For 5 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M15 18l-6-6 6-6" />
                 </svg>
               </button>
-              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Foto siguiente">
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path d="M9 18l6-6-6-6" />
                 </svg>
@@ -1135,37 +976,163 @@
               </div>
             </div>
             <div class="room-body">
-              <h3 class="room-name">Quíntuples · 2 ambientes</h3>
-              <p class="room-sub">Habitaciones · Planta baja o planta alta</p>
+              <h3 class="room-name">Independent Quints</h3>
+              <p class="room-sub">Independent cabins · 1 room</p>
               <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
-                Dos ambientes separados para que cada uno tenga su espacio.
-                Las de <strong>planta baja</strong> tienen cuarto privado con cama doble
-                y segundo ambiente con literas y sofá — ideales para familias con niños.
-                Las de <strong>planta alta</strong> distribuyen las cinco plazas en camas
-                individuales y matrimoniales sin literas, con balcón incluido.
+                Independent cabin with a double bed, a single bed and a two-level
+                bunk bed. The balcony looks straight onto the pool — kids wake up and
+                already see it. Up to 5 people in one well-organized, comfortable room.
               </p>
               <div class="room-tags">
-                <span class="tag">2 ambientes separados</span>
-                <span class="tag">PB — literas para niños</span>
-                <span class="tag">PA — camas + balcón</span>
-                <span class="tag">Cuarto privado adultos</span>
+                <span class="tag">Independent cabin</span>
+                <span class="tag">Pool-view balcony</span>
+                <span class="tag">Bunk bed included</span>
+                <span class="tag">Double + single + bunk</span>
               </div>
-              <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20habitaci%C3%B3n%20qu%C3%ADntuple%202%20ambientes"
-                class="btn btn-sky-outline" aria-label="Consultar disponibilidad" target="_blank"
-                rel="noopener noreferrer">
-                Consultar disponibilidad
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20the%20pool-view%20quint%20cabin"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
+              </a>
+            </div>
+          </article>
+          <!-- ─── QUINT — 3-room cabin ────────── -->
+          <article class="room-card">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the three-room quint cabin">
+              <div class="room-carousel-track" tabindex="0">
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-2-4.webp"
+                    alt="Bedroom of the three-room quint cabin at Oceanic Hostería with panoramic views" width="800"
+                    height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-9.webp"
+                    alt="Living room with sofa in the three-room quint cabin at Oceanic Hostería" width="800"
+                    height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-9.webp"
+                    alt="Second bedroom of the three-room quint cabin at Oceanic Hostería" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic5-4.webp"
+                    alt="Panoramic Pacific view from the three-room quint cabin at Oceanic Hostería" width="800"
+                    height="533" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <span class="room-badge">For 5 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+              <div class="room-carousel-dots" aria-hidden="true">
+                <span class="room-carousel-dot is-active"></span>
+                <span class="room-carousel-dot"></span>
+                <span class="room-carousel-dot"></span>
+                <span class="room-carousel-dot"></span>
+              </div>
+            </div>
+            <div class="room-body">
+              <h3 class="room-name">Quint · 3 rooms</h3>
+              <p class="room-sub">Upper floor · More privacy</p>
+              <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
+                The most private option in the family. Three fully
+                separate rooms: master bedroom with a double bed, second room with a
+                double and single bed, and its own living room with sofas. Two full bathrooms.
+                Upper floor with panoramic views of the Pacific and the Manabí hills.
+              </p>
+              <div class="room-tags">
+                <span class="tag">3 separate rooms</span>
+                <span class="tag">2 full bathrooms</span>
+                <span class="tag">Living room with sofa</span>
+                <span class="tag">Panoramic view</span>
+                <span class="tag">Upper floor</span>
+              </div>
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20the%20three-room%20quint%20cabin"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
+              </a>
+            </div>
+          </article>
+          <!-- ─── QUINT — 2-room rooms ──── -->
+          <article class="room-card">
+            <div class="room-carousel" role="group" aria-roledescription="carousel"
+              aria-label="Photos of the two-room quint rooms">
+              <div class="room-carousel-track" tabindex="0">
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-11.webp" alt="Two-room quint room at Oceanic Hostería, Puerto López"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-11.webp"
+                    alt="Bunk beds and sofa in the second room of a quint room at Oceanic Hostería" width="800"
+                    height="533" loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-11.webp"
+                    alt="Private room with a double bed in a quint room at Oceanic Hostería" width="800" height="533"
+                    loading="lazy" decoding="async">
+                </div>
+                <div class="room-carousel-slide">
+                  <img src="../img/Oceanic-3-11.webp" alt="Balcony of an upper-floor quint room at Oceanic Hostería"
+                    width="800" height="533" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <span class="room-badge">For 5 people</span>
+              <button class="room-carousel-arrow room-carousel-arrow--prev" type="button" aria-label="Previous photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button class="room-carousel-arrow room-carousel-arrow--next" type="button" aria-label="Next photo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+              <div class="room-carousel-dots" aria-hidden="true">
+                <span class="room-carousel-dot is-active"></span>
+                <span class="room-carousel-dot"></span>
+                <span class="room-carousel-dot"></span>
+                <span class="room-carousel-dot"></span>
+              </div>
+            </div>
+            <div class="room-body">
+              <h3 class="room-name">Quints · 2 rooms</h3>
+              <p class="room-sub">Rooms · Ground floor or upper floor</p>
+              <p style="font-size:var(--t-sm);color:var(--text-soft);margin-bottom:1rem;max-width:none;">
+                Two separate rooms so everyone has their own space.
+                The <strong>ground-floor</strong> ones have a private room with a double bed
+                and a second room with bunk beds and a sofa — ideal for families with children.
+                The <strong>upper-floor</strong> ones split the five spots across single
+                and double beds with no bunk beds, and include a balcony.
+              </p>
+              <div class="room-tags">
+                <span class="tag">2 separate rooms</span>
+                <span class="tag">Ground floor — kids' bunk beds</span>
+                <span class="tag">Upper floor — beds + balcony</span>
+                <span class="tag">Private adults' room</span>
+              </div>
+              <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20two-room%20quint%20room"
+                class="btn btn-sky-outline" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
+                Check Availability
               </a>
             </div>
           </article>
         </div><!-- /rooms-grid -->
-
-        <!-- CTA final  -->
+        <!-- Final CTA  -->
         <div class="rooms-cta">
           <p
             style="color:var(--text-soft);font-size:var(--t-sm);margin-bottom:var(--sp-sm);max-width:none;text-align:center;">
-            ¿No sabe cuál es la indicada para su grupo? Cuéntenos cuántos son y le ayudamos a elegir.
+            Not sure which one fits your group? Tell us how many you are and we'll help you choose.
           </p>
-          <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20que%20me%20ayuden%20a%20elegir%20la%20mejor%20opci%C3%B3n%20de%20alojamiento%20para%20mi%20grupo"
+          <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20help%20choosing%20the%20best%20lodging%20option%20for%20my%20group"
             class="btn btn-wa" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
               aria-hidden="true">
@@ -1174,84 +1141,83 @@
               <path
                 d="M12 0C5.373 0 0 5.373 0 12c0 2.117.551 4.103 1.516 5.825L0 24l6.335-1.496A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.016-1.376l-.36-.214-3.732.881.898-3.634-.235-.373A9.818 9.818 0 1 1 12 21.818z" />
             </svg>
-            Consultar por WhatsApp
+            Ask via WhatsApp
           </a>
         </div>
       </div>
     </section>
-    <!--   SERVICIOS -->
+    <!--  AMENITIES -->
     <section class="sec sec-cream" aria-labelledby="h-servicios">
       <div class="container">
         <div class="servicios-wrap">
           <div class="servicios-img">
-            <img src="img/piscina.webp"
-              alt="Piscina climatizada en temporada de frío de Hostería Oceanic rodeada de jardines tropicales en Puerto López, Manabí, Ecuador"
+            <img src="../img/piscina.webp"
+              alt="Cold-season heated pool at Oceanic Hostería surrounded by tropical gardens in Puerto López, Manabí, Ecuador"
               width="900" height="600" loading="lazy" decoding="async">
           </div>
           <div>
-            <div class="eyebrow">Incluido en toda estadía</div>
-            <h2 id="h-servicios">Todo lo que necesita para descansar de verdad.</h2>
+            <div class="eyebrow">Included in every stay</div>
+            <h2 id="h-servicios">Everything you need for a real rest.</h2>
             <div class="servicios-list">
-              <div class="s-item">Piscina climatizada en temporada de frío</div>
+              <div class="s-item">Cold-season heated pool</div>
               <div class="s-item">WiFi</div>
-              <div class="s-item">Desayuno </div>
-              <div class="s-item">Aire acondicionado</div>
-              <div class="s-item">Agua caliente</div>
-              <div class="s-item">Parqueadero privado</div>
-              <div class="s-item">Balcón</div>
-              <div class="s-item">Jardín privado</div>
-              <div class="s-item">Restaurante propio</div>
-              <div class="s-item">Frente al mar</div>
+              <div class="s-item">Breakfast</div>
+              <div class="s-item">Air conditioning</div>
+              <div class="s-item">Hot water</div>
+              <div class="s-item">Private parking</div>
+              <div class="s-item">Balcony</div>
+              <div class="s-item">Private garden</div>
+              <div class="s-item">Own restaurant</div>
+              <div class="s-item">Facing the sea</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- FRASES  — video + slider de frases -->
+    <!--   MOMENTS  — video + phrase slider      -->
     <section class="sec sec-cream" aria-labelledby="h-frases">
       <div class="container">
         <div style="text-align:center;">
-          <div class="eyebrow" style="justify-content:center;">Para Vivir Buenos Momentos</div>
-          <h2 id="h-frases">Somos las historias que se crean frente al mar. </h2>
+          <div class="eyebrow" style="justify-content:center;">Made for Good Moments</div>
+          <h2 id="h-frases">We are the stories made in front of the sea.</h2>
           <p style="color:var(--text-soft);margin-top:.5rem;margin-inline:auto;">
-            En nuestras redes compartimos rincones de Puerto López, momentos que nos inspiran y recuerdos de quienes nos
-            visitan. Si alguna vez formaste parte de ellos, nos encantará volver a encontrarte por allí.
+            On our social channels we share corners of Puerto López, moments that inspire us, and memories
+            of the guests who visit. If you were ever part of them, we'd love to find you there again.
           </p>
         </div>
         <div class="frases-wrap">
           <div class="frases-video">
             <video id="heroVideo" autoplay muted loop playsinline preload="none" poster="/img/imagen-predio.webp"
-              width="848" height="478" aria-label="Video aéreo de Hostería Oceanic y el Pacífico">
+              width="848" height="478" aria-label="Aerial video of Oceanic Hostería and the Pacific">
             </video>
             <div class="frases-video-caption">
-              <span>Puerto López desde el aire</span>
+              <span>Puerto López from above</span>
             </div>
           </div>
-          <div class="frases-carousel" role="group" aria-roledescription="carrusel"
-            aria-label="Frases de Hostería Oceanic">
+          <div class="frases-carousel" role="group" aria-roledescription="carousel"
+            aria-label="Oceanic Hostería phrases">
             <div class="frases-carousel-track" tabindex="0">
               <div class="frases-carousel-slide">
-                <img src="img/collage1.webp"
-                  alt="Camino de arena hacia el mar con frase sobre llegar buscando respuestas" width="500" height="500"
+                <img src="../img/collage1.webp"
+                  alt="Sandy path to the sea with a phrase about arriving looking for answers" width="500" height="500"
                   loading="lazy" decoding="async">
               </div>
               <div class="frases-carousel-slide">
-                <img src="img/collage2.webp" alt="Hamaca en balcón con frase sobre desconectar del trabajo" width="500"
+                <img src="../img/collage2.webp" alt="Hammock on a balcony with a phrase about disconnecting from work"
+                  width="500" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="frases-carousel-slide">
+                <img src="../img/collage3.webp" alt="Flower with a phrase about adding up little by little" width="500"
                   height="500" loading="lazy" decoding="async">
               </div>
-              <div class="frases-carousel-slide">
-                <img src="img/collage3.webp" alt="Flor con frase sobre sumar de poco en poco" width="500" height="500"
-                  loading="lazy" decoding="async">
-              </div>
-
             </div>
-            <button class="frases-carousel-arrow frases-carousel-arrow--prev" type="button" aria-label="Frase anterior">
+            <button class="frases-carousel-arrow frases-carousel-arrow--prev" type="button"
+              aria-label="Previous phrase">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <path d="M15 18l-6-6 6-6" />
               </svg>
             </button>
-            <button class="frases-carousel-arrow frases-carousel-arrow--next" type="button"
-              aria-label="Frase siguiente">
+            <button class="frases-carousel-arrow frases-carousel-arrow--next" type="button" aria-label="Next phrase">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                 <path d="M9 18l6-6-6-6" />
               </svg>
@@ -1260,14 +1226,13 @@
               <span class="frases-carousel-dot is-active"></span>
               <span class="frases-carousel-dot"></span>
               <span class="frases-carousel-dot"></span>
-
             </div>
           </div>
         </div>
         <div style="text-align:center;margin-top:var(--sp-lg);">
           <div class="frases-social">
             <a href="https://www.instagram.com/oceanichosteria/" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram de Hostería Oceanic">
+              aria-label="Oceanic Hostería on Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" />
                 <circle cx="12" cy="12" r="4" />
@@ -1275,13 +1240,13 @@
               </svg>
             </a>
             <a href="https://www.facebook.com/oceanichosteria" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook de Hostería Oceanic">
+              aria-label="Oceanic Hostería on Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
             <a href="https://www.tiktok.com/@hosteriaoceanic" target="_blank" rel="noopener noreferrer"
-              aria-label="TikTok de Hostería Oceanic">
+              aria-label="Oceanic Hostería on TikTok">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
@@ -1289,54 +1254,52 @@
             </a>
           </div>
         </div>
-      </div>
     </section>
-
-    <!-- HOLÍSTICO -->
+    <!--  HOLISTIC -->
     <section class="sec sec-night" aria-labelledby="h-holistico">
       <div class="container">
         <div class="hol-grid">
-
-          <!-- Columna izquierda: texto -->
+          <!-- Left column: text -->
           <div class="hol-text">
-            <div class="eyebrow">Un entorno que transforma desde el primer instante</div>
+            <div class="eyebrow">A setting that transforms from the very first moment</div>
 
-            <h2 id="h-holistico">Oceanic es un espacio holístico donde la naturaleza forma parte del proceso.</h2>
+            <h2 id="h-holistico">Oceanic is a holistic retreat where nature becomes part of the experience.</h2>
 
             <p style="color:rgba(255,255,255,0.78);margin-top:.75rem;">
-              Lo holístico no es un concepto ni una tendencia. Es la experiencia de un lugar donde el océano, la
-              selva tropical y el ritmo natural del entorno crean las condiciones para desconectar del ruido
-              cotidiano y recuperar la presencia. Aquí, el espacio no acompaña el retiro: es parte activa de él.
+              Holistic isn't a trend or a marketing label. It's the experience of a place where the Pacific Ocean,
+              tropical rainforest, and the natural rhythm of the environment create the ideal conditions to disconnect
+              from everyday distractions and reconnect with yourself. Here, the setting doesn't simply host the
+              retreat—it
+              becomes an essential part of it.
             </p>
 
             <p style="color:rgba(255,255,255,0.78);margin-top:.75rem;">
-              Antes de la primera práctica, algo ya cambia. El sonido constante del Pacífico, la brisa marina y la
-              calma del paisaje modifican la forma de respirar, de observar y de habitar el momento. Cuando comienza
-              la experiencia, el cuerpo ya ha empezado su propio proceso de transformación.
+              Before the first session begins, something has already shifted. The sound of the waves, the ocean breeze,
+              and the calm surroundings naturally slow the mind and deepen the breath. By the time the experience
+              starts,
+              the body has already begun its own transformation.
             </p>
           </div>
-
           <div class="hol-pillars">
             <div class="hol-pillar">
-              <span class="hol-pillar-title">Entorno natural</span>
-              <span class="hol-pillar-desc">Mar, jardines tropicales y silencio real como parte del programa.</span>
+              <span class="hol-pillar-title">Natural setting</span>
+              <span class="hol-pillar-desc">Sea, tropical gardens and real silence as part of the program.</span>
             </div>
             <div class="hol-pillar">
-              <span class="hol-pillar-title">Cuerpo presente</span>
-              <span class="hol-pillar-desc">Piscina, aire libre y descanso profundo entre cada actividad.</span>
+              <span class="hol-pillar-title">Body present</span>
+              <span class="hol-pillar-desc">Pool, open air and deep rest between each activity.</span>
             </div>
             <div class="hol-pillar">
-              <span class="hol-pillar-title">Alimentación consciente</span>
-              <span class="hol-pillar-desc">Cocina manabita con opciones vegetarianas y adaptación al grupo.</span>
+              <span class="hol-pillar-title">Mindful eating</span>
+              <span class="hol-pillar-desc">Manabí cuisine with vegetarian options and group adjustments.</span>
             </div>
             <div class="hol-pillar">
-              <span class="hol-pillar-title">Tiempo sin prisa</span>
-              <span class="hol-pillar-desc">Horarios flexibles. El retiro manda, nosotros nos adaptamos.</span>
+              <span class="hol-pillar-title">Unhurried time</span>
+              <span class="hol-pillar-desc">Flexible schedules. The retreat leads, we adapt.</span>
             </div>
           </div>
-
           <div style="margin-top:var(--sp-md);">
-            <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20para%20un%20retiro%20en%20Hoster%C3%ADa%20Oceanic"
+            <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20a%20retreat%20at%20Oceanic%20Hoster%C3%ADa"
               class="btn btn-wa" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
                 aria-hidden="true">
@@ -1345,419 +1308,408 @@
                 <path
                   d="M12 0C5.373 0 0 5.373 0 12c0 2.117.551 4.103 1.516 5.825L0 24l6.335-1.496A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.016-1.376l-.36-.214-3.732.881.898-3.634-.235-.373A9.818 9.818 0 1 1 12 21.818z" />
               </svg>
-              Consultar disponibilidad para retiro
+              Check Availability for Your Retreat
             </a>
           </div>
         </div>
-
-        <!-- Columna derecha: mosaico -->
+        <!-- Right column: mosaic -->
         <div class="hol-visual" aria-hidden="true">
           <div class="hol-img hol-img--tall">
-            <img src="retiros-holisticos-puerto-lopez/hero-retiro-2.webp"
-              alt="Piscina de Oceanic Hostería rodeada de jardines tropicales, Puerto López" loading="lazy" width="400"
+            <img src="../retiros-holisticos-puerto-lopez/hero-retiro-2.webp"
+              alt="Pool at Oceanic Hostería surrounded by tropical gardens, Puerto López" loading="lazy" width="400"
               height="520">
           </div>
           <div class="hol-img hol-img--short">
-            <img src="retiros-holisticos-puerto-lopez/hero-oceanic-retiro.webp"
-              alt="Jardines tropicales y cabañas de Oceanic Hostería frente al Pacífico" loading="lazy" width="400"
+            <img src="../retiros-holisticos-puerto-lopez/hero-oceanic-retiro.webp"
+              alt="Tropical gardens and cabins at Oceanic Hostería facing the Pacific" loading="lazy" width="400"
               height="220">
           </div>
           <div class="hol-stat">
-            <span class="hol-stat-num">+350</span>
-            <span class="hol-stat-label">reseñas en Google · 4.5 sobre 5</span>
+            <span class="hol-stat-num">360+</span>
+            <span class="hol-stat-label">Google reviews · 4.5 out of 5</span>
           </div>
         </div>
       </div>
     </section>
-    <!-- RESTAURANTE -->
+    <!--  RESTAURANT -->
     <section class="sec sec-white" aria-labelledby="h-restaurante">
       <div class="container">
         <div class="rest-wrap">
           <div>
-            <div class="eyebrow">Restaurante</div>
-            <h2 id="h-restaurante">Cocina manabita.<br>Fresca y deliciosa.</h2>
+            <div class="eyebrow">Restaurant</div>
+            <h2 id="h-restaurante">Manabí cuisine.<br>Fresh and delicious.</h2>
             <p style="color:var(--text-soft);margin-top:.75rem;">
-              Mariscos frescos, cazuela, ceviche y platos de la costa manabita.
-              Restobar con vista al jardín tropical. Abierto para huéspedes y visitantes.
+              Fresh seafood, cazuela, ceviche and dishes from the Manabí coast.
+              Restobar with a tropical garden view. Open to guests and visitors alike.
             </p>
             <div class="platos">
-              <div class="plato">Cazuela marinera</div>
-              <div class="plato">Camarones encocados</div>
-              <div class="plato">Pescado al ajillo</div>
-              <div class="plato">Ceviche mixto</div>
-              <div class="plato">Espagueti con camarón</div>
-              <div class="plato">Arroz marinero</div>
+              <div class="plato">Seafood cazuela</div>
+              <div class="plato">Shrimp in coconut sauce</div>
+              <div class="plato">Garlic fish</div>
+              <div class="plato">Mixed ceviche</div>
+              <div class="plato">Spaghetti with shrimp</div>
+              <div class="plato">Seafood rice</div>
             </div>
             <div class="rest-actions">
-
-              <a href="https://wa.me/593959700619?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20el%20restaurante%20Oceanic"
+              <a href="https://wa.me/593959700619?text=Hi%2C%20I%27d%20like%20to%20book%20a%20table%20at%20the%20Oceanic%20restaurant"
                 class="btn btn-sky-outline" target="_blank" rel="noopener noreferrer">
-                Reservar mesa
+                Book a Table
               </a>
             </div>
             <div class="rest-pdf">
-              <img src="img/Menu-Restobar-Oceanic.webp" alt="QR menú Oceanic" width="44" height="44" loading="lazy"
-                decoding="async">
+              <img src="../img/Menu-Restobar-Oceanic.webp" alt="QR code for the Oceanic menu" width="44" height="44"
+                loading="lazy" decoding="async">
               <div class="rest-pdf-links">
-                <a href="img/MENU-RESTAURANTE-OCEANIC.pdf" target="_blank" rel="noopener noreferrer" download>
-                  Descargar la carta completa (PDF)
+                <a href="../img/MENU-RESTAURANTE-OCEANIC.pdf" target="_blank" rel="noopener noreferrer" download>
+                  Download the full menu (PDF)
                 </a>
-                <span>O escanee el código QR</span>
+                <span>Or scan the QR code</span>
               </div>
             </div>
           </div>
-          <!-- Bloque eventos -->
+          <!-- Events block — large image with CTA -->
           <div class="eventos-bloque">
-            <img src="img/eventos.webp"
-              alt="Salón de eventos de Hostería Oceanic preparado para boda con decoración floral en Puerto López Ecuador"
+            <img src="../img/eventos.webp"
+              alt="Event hall at Oceanic Hostería set up for a wedding with floral decoration in Puerto López, Ecuador"
               width="600" height="450" loading="lazy" decoding="async">
             <div class="eventos-info">
-              <h3>Celebre con nosotros</h3>
-              <p>Haga de cada ocasión un momento inolvidable. Organizamos bodas, cumpleaños, aniversarios, reuniones
-                familiares y eventos sociales en un entorno único, con amplios jardines, terraza al aire libre y la
-                mejor gastronomía.</p>
-              <a href="https://wa.me/5593959700619?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20para%20un%20evento%20en%20Hoster%C3%ADa%20Oceanic"
+              <h3>Celebrate with us</h3>
+              <p>Make every occasion unforgettable. We host weddings, birthdays, anniversaries, family
+                gatherings and social events in a one-of-a-kind setting, with spacious gardens, an
+                outdoor terrace and the best cuisine.</p>
+              <a href="https://wa.me/593959700619?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20for%20an%20event%20at%20Oceanic%20Hoster%C3%ADa"
                 class="btn btn-wa" target="_blank" rel="noopener noreferrer">
-                Solicite cotización
+                Request a Quote
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--  TURISMO -->
+    <!-- TOURISM -->
     <section class="sec sec-night" aria-labelledby="h-turismo">
       <div class="container">
         <div style="text-align:center;">
-          <div class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.75);">Desde Hostería Oceanic</div>
+          <div class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.75);">From Oceanic Hostería</div>
           <h2 id="h-turismo" style="color:#fff;margin-top:.5rem;">
-            Puerto López tiene más de lo que imagina.
+            Puerto López has more to offer than you'd think.
           </h2>
           <p style="color:rgba(255,255,255,.72);margin-top:.5rem;margin-inline:auto;">
-            Coordinamos las excursiones desde la hostería. Solo tiene que pedirlo.
+            We coordinate excursions right from the lodge. Just ask.
           </p>
         </div>
         <div class="turismo-grid">
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-ballenas.webp"
-                alt="Ballenas jorobadas durante avistamiento en Puerto López, Manabí, Ecuador" width="400" height="250"
-                loading="lazy" decoding="async">
+              <img src="../img/turismo-ballenas.webp"
+                alt="Humpback whales during a whale-watching tour in Puerto López, Manabí, Ecuador" width="400"
+                height="250" loading="lazy" decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Avistamiento de ballenas en Puerto López
+              <h3>Whale watching in Puerto López
               </h3>
-              <p>Cada año, entre junio y septiembre, llegan ballenas jorobadas desde la Antártida para
-                aparearse y tener a sus crías en las aguas tibias de Puerto López. Hay tours de avistamiento que
-                salen del muelle, a pocos minutos caminando desde la hostería, en embarcaciones que se
-                acercan lo suficiente para verlas saltar y golpear el agua con la cola. Para muchos huéspedes
-                es la razón principal del viaje.</p>
+              <p>Every year, between June and September, humpback whales arrive from Antarctica
+                to mate and give birth in the warm waters off Puerto López. Watching tours leave
+                from the pier, a few minutes' walk from the lodge, on boats that get close
+                enough to see them breach and slap the water with their tails. For many guests
+                it's the main reason for the trip.</p>
             </div>
           </div>
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-isla-plata.webp" alt="Piqueros de patas azules en Isla de la Plata, Ecuador"
+              <img src="../img/turismo-isla-plata.webp" alt="Blue-footed boobies on Isla de la Plata, Ecuador"
                 width="400" height="250" loading="lazy" decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Isla de la Plata – Parque Nacional Machalilla
+              <h3>Isla de la Plata – Machalilla National Park
               </h3>
-              <p>La llaman "la Galápagos del pobre" porque sin viajar 1000 km mar adentro se puede caminar
-                entre piqueros de patas azules, fragatas y albatros. La travesía
-                en bote dura cerca de una hora y media desde Puerto López, e incluye snorkel en aguas claras donde es
-                común cruzarse con tortugas marinas. Una excursión de día completo, ideal para
-                quienes quieren algo más aventurero que la playa.</p>
+              <p>They call it "the poor man's Galápagos" because without traveling 1,000 km offshore
+                you can walk among blue-footed boobies, frigatebirds and albatrosses. The boat
+                crossing takes about an hour and a half from Puerto López and includes snorkeling
+                in clear waters where sea turtles are commonly seen. A full-day excursion, ideal
+                for those wanting something more adventurous than the beach.</p>
             </div>
           </div>
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-los-frailes.webp"
-                alt="Playa Los Frailes dentro del Parque Nacional Machalilla, Ecuador" width="400" height="250"
-                loading="lazy" decoding="async">
+              <img src="../img/turismo-los-frailes.webp"
+                alt="Los Frailes Beach inside Machalilla National Park, Ecuador" width="400" height="250" loading="lazy"
+                decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Playa Los Frailes en Manabí
+              <h3>Los Frailes Beach in Manabí
               </h3>
-              <p>Arena blanca, agua turquesa y ni un solo puesto de comida o sombrilla a la vista: Los Frailes
-                está protegida dentro del Parque Nacional Machalilla, así que se mantiene virgen. Se llega
-                caminando por un sendero entre acantilados y bosque seco tropical con mirador al mar, a unos
-                15 minutos en auto desde la hostería. Vale la pena ir temprano, antes de que lleguen los
-                tours del mediodía.</p>
+              <p>White sand, turquoise water and not a single food stall or umbrella in sight: Los
+                Frailes is protected inside Machalilla National Park, so it stays pristine.
+                It's reached by a trail through cliffs and tropical dry forest with an ocean
+                lookout, about 15 minutes by car from the lodge. Worth going early, before the
+                midday tours arrive.</p>
             </div>
           </div>
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-agua-blanca.webp"
-                alt="Laguna de azufre de Agua Blanca y sitio arqueológico en Manabí, Ecuador" width="400" height="250"
+              <img src="../img/turismo-agua-blanca.webp"
+                alt="Sulfur lagoon at Agua Blanca and archaeological site in Manabí, Ecuador" width="400" height="250"
                 loading="lazy" decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Agua Blanca y cultura Manteña </h3>
-              <p>Una comunidad local administra este sitio donde vivió la cultura Manteña hace más de 700
-                años. El museo arqueológico guarda piezas originales encontradas en la zona, y a pocos
-                pasos hay una laguna de aguas sulfurosas color blanco lechoso donde se puede entrar a
-                nadar; muchos dicen que el barro ayuda a la piel. Una mañana distinta, mitad historia,
-                mitad naturaleza, a 10 km de la hostería.</p>
+              <h3>Agua Blanca and Manteña culture</h3>
+              <p>A local community manages this site where the Manteña culture lived more than 700
+                years ago. The archaeological museum holds original pieces found in the area, and
+                just steps away is a milky-white sulfur lagoon you can swim in; many say the mud
+                is good for the skin. A different kind of morning, part history, part nature,
+                10 km from the lodge.</p>
             </div>
           </div>
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-pesca-artesanal.webp"
-                alt="Pesca artesanal en el muelle de Puerto López, Manabí, Ecuador" width="400" height="250"
+              <img src="../img/turismo-pesca-artesanal.webp"
+                alt="Artisanal fishing at the Puerto López pier, Manabí, Ecuador" width="400" height="250"
                 loading="lazy" decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Pesca artesanal</h3>
-              <p>Cada mañana, bien temprano, los pescadores de Puerto López vuelven a la orilla con la
-                captura del día y la venden directo desde sus botes pintados de colores. Es un ritual que
-                lleva generaciones y que se puede presenciar caminando por el muelle a pasos de la
-                hostería: la subasta de pescado, las gaviotas peleando por las sobras, el movimiento del
-                pueblo despertando. Auténtico, sin ningún montaje para turistas.</p>
+              <h3>Artisanal fishing</h3>
+              <p>Every morning, bright and early, Puerto López fishermen return to shore with the
+                day's catch and sell it straight from their brightly painted boats. It's a
+                tradition going back generations that you can watch by walking along the pier
+                a few steps from the lodge: the fish auction, gulls fighting over scraps, the
+                town waking up. Authentic, with nothing staged for tourists.</p>
             </div>
           </div>
           <div class="t-card">
             <div class="t-card-img">
-              <img src="img/turismo-monumento-al-pescador.webp"
-                alt="Monumento al Pescador en el malecón de Puerto López, Manabí, Ecuador" width="400" height="250"
+              <img src="../img/turismo-monumento-al-pescador.webp"
+                alt="Fisherman's Monument on the Puerto López boardwalk, Manabí, Ecuador" width="400" height="250"
                 loading="lazy" decoding="async">
             </div>
             <div class="t-card-body">
-              <h3>Centro del malecón</h3>
-              <p>Caminando 10 minutos desde la hostería se llega al corazón de Puerto López: el Monumento
-                al Pescador, los puestos de artesanías hechas a mano con semillas, tagua y conchas, y el
-                muelle turístico donde salen las lanchas hacia la Isla de la Plata. Al atardecer se llena
-                de gente paseando, vendedores ambulantes y la mejor luz para ver el sol meterse en el
-                Pacífico.</p>
+              <h3>Downtown boardwalk</h3>
+              <p>A 10-minute walk from the lodge takes you to the heart of Puerto López: the
+                Fisherman's Monument, handmade craft stalls made of seeds, tagua and shells, and
+                the tourist pier where boats leave for Isla de la Plata. At sunset it fills with
+                people strolling, street vendors, and the best light to watch the sun sink into
+                the Pacific.</p>
             </div>
           </div>
         </div>
         <div style="text-align:center;margin-top:var(--sp-lg);">
-
         </div>
       </div>
     </section>
-    <!--  RESEÑAS + MAPA -->
+    <!--  REVIEWS + MAP -->
     <section class="sec sec-cream" aria-labelledby="h-resenas" id="resenas">
       <div class="container">
-        <div class="eyebrow">Lo que dice la gente</div>
-        <h2 id="h-resenas">+350 reseñas en Google. Hablan ellos.</h2>
+        <div class="eyebrow">What people say</div>
+        <h2 id="h-resenas">300+ reviews on Google. Let them speak.</h2>
         <div class="rev-map-grid" style="margin-top:var(--sp-lg);">
           <div>
             <div class="rev-head">
               <div>
-                <div class="rev-score-num" aria-label="Puntuación 4.5 sobre 5">4.5</div>
+                <div class="rev-score-num" aria-label="Score 4.5 out of 5">4.5</div>
                 <div class="rev-score-stars" aria-hidden="true">★★★★☆</div>
-                <div class="rev-score-count">+350 reseñas · Google</div>
+                <div class="rev-score-count">+350 reviews · Google</div>
               </div>
               <a href="https://www.google.com/maps/place/Oceanic+Hosteri%C3%ADa+puerto+L%C3%B3pez/@-1.5476458,-80.8126593"
                 class="btn btn-sky-outline" target="_blank" rel="noopener noreferrer">
-                Dejar reseña
+                Leave a Review
               </a>
             </div>
             <div class="rev-grid">
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Entorno, paz y tranquilidad. Sin contaminación sonora, eso es fundamental en unas
-                  vacaciones. Lo recomiendo al cien por cien."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"Setting, peace and quiet. No noise pollution, which is essential on
+                  vacation. I recommend it one hundred percent."</p>
                 <cite class="rev-author">Adriana Massanti · Google</cite>
               </article>
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Cabañas impecables, muy espaciosas. Ubicación tranquila y lejos del ruido del
-                  centro, ideal para descansar."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"Spotless, very spacious cabins. Quiet location, away from the noise
+                  of downtown — ideal for resting."</p>
                 <cite class="rev-author">Yamila Kloster · Google</cite>
               </article>
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Al lado tranquilo del malecón, frente al mar. Solo escucharás el sonido de pájaros
-                  y las olas."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"On the quiet side of the boardwalk, facing the sea. All you'll hear
+                  is birds and waves."</p>
                 <cite class="rev-author">Arlen Inmobiliaria · Google</cite>
               </article>
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Los camarones en salsa de coco fueron un manjar. La pasta al dente, deliciosa. Todo
-                  sin excepción exquisito. Atención de primera."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"The shrimp in coconut sauce were a delicacy. The pasta al dente,
+                  delicious. Everything without exception was exquisite. First-class service."</p>
                 <cite class="rev-author">Sol Damerval · Google</cite>
               </article>
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Hermoso lugar. Perfecto para compartir en familia."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"Beautiful place. Perfect to share with family."</p>
                 <cite class="rev-author">Melanie Córdova · Google</cite>
               </article>
               <article class="rev-card">
-                <div class="rev-stars" aria-label="5 de 5">★★★★★</div>
-                <p class="rev-text">"Me casé en esta hostería y fue mágico. La comida riquísima, mejor que un hotel de 5
-                  estrellas."</p>
+                <div class="rev-stars" aria-label="5 out of 5">★★★★★</div>
+                <p class="rev-text">"I got married at this lodge and it was magical. Delicious food,
+                  better than a 5-star hotel."</p>
                 <cite class="rev-author">Renatto Ledesma · Google</cite>
               </article>
             </div>
           </div>
-          <!-- MAPA -->
+          <!-- MAP -->
           <div class="map-sticky">
-            <div class="eyebrow" style="margin-bottom:.75rem;">Dónde encontrarnos</div>
+            <div class="eyebrow" style="margin-bottom:.75rem;">Find Us</div>
             <div class="map-wrap">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.362879290048!2d-80.81265932595262!3d-1.547645835965688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902c20a1403f642b%3A0xeea2d9fa4d4e8ade!2sOceanic%20Hoster%C3%ADa%20puerto%20L%C3%B3pez!5e0!3m2!1ses!2sar!4v1781817521021!5m2!1ses!2sar"
-                title="Ubicación de Hostería Oceanic — Malecón Julio Izurieta S/N, sector norte, Puerto López, Ecuador"
+                title="Oceanic Hostería location — Malecón Julio Izurieta S/N, north sector, Puerto López, Ecuador"
                 loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
             <p class="map-note">
-              Malecón Julio Izurieta S/N, sector norte<br>
+              Malecón Julio Izurieta S/N, north sector<br>
               Puerto López, Manabí · Ecuador<br>
-              A 10 min caminando del centro
+              10-minute walk from downtown
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!--  FAQ -->
+    <!-- FAQ  -->
     <section class="sec sec-white" aria-labelledby="h-faq">
       <div class="container">
-        <div class="eyebrow">Preguntas frecuentes</div>
-        <h2 id="h-faq">Antes de escribirnos, lea esto.</h2>
+        <div class="eyebrow">Frequently asked questions</div>
+        <h2 id="h-faq">Read this before you write to us.</h2>
         <div class="faq-list">
           <details class="faq">
-            <summary>¿El desayuno está incluido?</summary>
+            <summary>Is breakfast included?</summary>
             <div class="faq-ans">
-              <p>Sí. El desayuno está incluido para todos los huéspedes, sin excepción.
-                Horario: 08:00 a 10:00 h. Pasado ese horario, tiene un costo adicional de $5 por persona.</p>
+              <p>Yes. Breakfast is included for all guests, without exception.
+                Hours: 8:00 to 10:00 AM. After that time, there's an extra $5 charge per person.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿La piscina está climatizada?</summary>
+            <summary>Is the pool heated?</summary>
             <div class="faq-ans">
-              <p>Sí. Climatizada en temporada de frío. Horario: 10:00 a 22:00 h (temporada de sol)
-                y hasta las 20:00 h en temporada fría.</p>
+              <p>Yes. Heated during the cold season. Hours: 10:00 AM to 10:00 PM (sunny season)
+                and until 8:00 PM in the cold season.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Cómo reservo?</summary>
+            <summary>How do I book?</summary>
             <div class="faq-ans">
-              <p>Por WhatsApp o llamada al <a href="tel:+593995930635" style="color:var(--sky);">+593 99
+              <p>Via WhatsApp or by calling <a href="tel:+593995930635" style="color:var(--sky);">+593 99
                   593 0635</a>.
-                Para confirmar se requiere un depósito del 25% del total de la estadía.
-                Check-in: 14:00 h · Check-out: 11:00 h.</p>
+                A 25% deposit of the total stay is required to confirm.
+                Check-in: 2:00 PM · Check-out: 11:00 AM.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Es apto para familias con niños?</summary>
+            <summary>Is it suitable for families with children?</summary>
             <div class="faq-ans">
-              <p>Sí. Tenemos cabañas con literas para hasta 6 personas. Todas con acceso privado, jardín
-                y balcón con hamaca. Los adultos son responsables de los menores en todo el predio.</p>
+              <p>Yes. We have cabins with bunk beds for up to 6 people. All with private access, a garden
+                and a balcony with a hammock. Adults are responsible for minors on the property.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Dónde están ubicados exactamente?</summary>
+            <summary>Where exactly are you located?</summary>
             <div class="faq-ans">
-              <p>Malecón Julio Izurieta S/N, sector norte, Puerto López, Manabí, Ecuador.
-                A 10 minutos caminando del centro, en la zona más tranquila del malecón.
-                Contamos con parqueo gratuito.</p>
+              <p>Malecón Julio Izurieta S/N, north sector, Puerto López, Manabí, Ecuador.
+                A 10-minute walk from downtown, in the quietest area of the boardwalk.
+                We offer free parking.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Tienen WiFi?</summary>
+            <summary>Do you have WiFi?</summary>
             <div class="faq-ans">
-              <p>Sí. Contamos con conexión WiFi disponible en las áreas comunes y zonas de hospedaje para que pueda
-                mantenerse conectado durante su estadía.</p>
-            </div>
-          </details>
-
-          <details class="faq">
-            <summary>¿Hay aire acondicionado en las habitaciones?</summary>
-            <div class="faq-ans">
-              <p>Sí. Todas nuestras cabañas y habitaciones cuentan con aire acondicionado para garantizar una estancia
-                cómoda durante todo el año.</p>
-            </div>
-          </details>
-
-          <details class="faq">
-            <summary>¿Qué distancia hay desde la hostería hasta Playa Los Frailes?</summary>
-            <div class="faq-ans">
-              <p>Playa Los Frailes se encuentra a aproximadamente 15 minutos en vehículo desde Hostería Oceanic. Es una
-                de las playas más visitadas del Parque Nacional Machalilla y una excursión muy recomendada para nuestros
-                huéspedes.</p>
-            </div>
-          </details>
-
-          <details class="faq">
-            <summary>¿Cómo llego a Hostería Oceanic en auto?</summary>
-            <div class="faq-ans">
-              <p>La calle de acceso es C. A-5. Si viene por la Ruta del Spondylus desde el sector norte,
-                gire a la derecha en la calle próxima a la gasolinera. Si viene desde el sur, después de
-                pasar la chocolatería Pacha, gire a la izquierda. Ante cualquier duda, escríbanos por
-                WhatsApp y lo guiamos en tiempo real.</p>
+              <p>Yes. We have WiFi available in common areas and lodging areas so you can stay
+                connected during your stay.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Cómo llego a Hostería Oceanic desde la terminal terrestre?</summary>
+            <summary>Is there air conditioning in the rooms?</summary>
             <div class="faq-ans">
-              <p>Desde el terminal de Puerto López puede tomar una mototaxi por $1 hasta la hostería.
-                Si llega en auto, la calle de acceso es C. A-5: viniendo por la Ruta del Spondylus desde
-                el sector norte, gire a la derecha en la calle próxima a la gasolinera; viniendo desde el
-                sur, después de pasar la chocolatería Pacha, gire a la izquierda. Ante cualquier duda,
-                escríbanos por WhatsApp y lo guiamos en tiempo real.</p>
+              <p>Yes. All of our cabins and rooms have air conditioning to ensure a comfortable
+                stay year-round.</p>
             </div>
           </details>
           <details class="faq">
-            <summary>¿Qué horarios de bus hay desde Puerto López hacia otros destinos?</summary>
+            <summary>How far is the lodge from Los Frailes Beach?</summary>
             <div class="faq-ans">
-              <p>Estos son los horarios de bus desde Puerto López. Le recomendamos confirmar el horario
-                exacto con la cooperativa antes de viajar, ya que puede variar.</p>
-
+              <p>Los Frailes Beach is about a 15-minute drive from Oceanic Hostería. It's one of the
+                most-visited beaches in Machalilla National Park and a highly recommended excursion
+                for our guests.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I get to Oceanic Hostería by car?</summary>
+            <div class="faq-ans">
+              <p>The access street is C. A-5. If you're coming along the Spondylus Route from the
+                north, turn right at the street next to the gas station. If coming from the south,
+                after passing the Pacha chocolate shop, turn left. If you have any doubt, message us
+                on WhatsApp and we'll guide you in real time.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I get to Oceanic Hostería from the bus terminal?</summary>
+            <div class="faq-ans">
+              <p>From the Puerto López terminal you can take a mototaxi for $1 to the lodge.
+                If arriving by car, the access street is C. A-5: coming along the Spondylus Route
+                from the north, turn right at the street next to the gas station; coming from the
+                south, after passing the Pacha chocolate shop, turn left. If you have any doubt,
+                message us on WhatsApp and we'll guide you in real time.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What are the bus schedules from Puerto López to other destinations?</summary>
+            <div class="faq-ans">
+              <p>These are the bus schedules from Puerto López. We recommend confirming the exact
+                time with the cooperative before traveling, as it may vary.</p>
               <p style="font-weight:700;color:var(--text);margin-top:1rem;margin-bottom:.4rem;">
                 Puerto López – Guayaquil
               </p>
               <p style="margin-bottom:0;">
-                04:00 · 04:55 · 06:00 · 06:55 · 07:50 · 09:00 · 10:05 · 12:00 · 13:00 · 14:35 · 16:00 · 17:00 · 17:45
+                4:00 · 4:55 · 6:00 · 6:55 · 7:50 · 9:00 · 10:05 · 12:00 · 1:00 · 2:35 · 4:00 · 5:00 · 5:45
               </p>
-
               <p style="font-weight:700;color:var(--text);margin-top:1rem;margin-bottom:.4rem;">
-                Puerto López – Manta (ruta costa)
+                Puerto López – Manta (coastal route)
               </p>
               <p style="margin-bottom:0;">
-                04:45 · 06:15 · 09:00 · 09:50 · 11:00 · 12:25 · 13:30 · 14:00 · 15:15 · 16:15
+                4:45 · 6:15 · 9:00 · 9:50 · 11:00 · 12:25 · 1:30 · 2:00 · 3:15 · 4:15
               </p>
-
               <p style="font-weight:700;color:var(--text);margin-top:1rem;margin-bottom:.4rem;">
-                Puerto López – Manta (ruta Jipijapa)
+                Puerto López – Manta (Jipijapa route)
               </p>
               <p style="margin-bottom:0;">
-                04:15 · 05:30 · 06:20 · 07:10 · 08:30 · 09:45 · 10:30 · 11:00 · 11:25 · 12:30 · 13:30 · 14:00 ·
-                14:25 · 15:00 · 16:20 · 17:15
+                4:15 · 5:30 · 6:20 · 7:10 · 8:30 · 9:45 · 10:30 · 11:00 · 11:25 · 12:30 · 1:30 · 2:00 ·
+                2:25 · 3:00 · 4:20 · 5:15
               </p>
-
               <p style="font-weight:700;color:var(--text);margin-top:1rem;margin-bottom:.4rem;">
-                Montañita y Ayampe
+                Montañita and Ayampe
               </p>
               <p style="margin-bottom:0;">
-                Hacia Montañita y Ayampe pasan buses con frecuencia por la parada de la calle céntrica de
-                la Ruta del Spondylus. También hay autos compartidos desde $1.50 hacia Machalilla o Ayampe.
+                Buses to Montañita and Ayampe pass frequently at the stop on the main street of the
+                Spondylus Route. There are also shared cars from $1.50 to Machalilla or Ayampe.
               </p>
-
               <p style="margin-top:1rem;">
-                Si llega en bus desde otro destino, una vez en la terminal de Puerto López puede tomar
-                una mototaxi por $1 hasta la hostería, o escribirnos por WhatsApp y lo ayudamos a coordinar
-                la llegada.
+                If you arrive by bus from another destination, once at the Puerto López terminal you
+                can take a mototaxi for $1 to the lodge, or message us on WhatsApp and we'll help
+                coordinate your arrival.
               </p>
             </div>
           </details>
         </div>
       </div>
     </section>
-    <!--  CTA RESERVAR -->
+    <!-- BOOKING CTA -->
     <section class="cta-sec" aria-labelledby="h-cta">
       <div class="container">
-        <div class="eyebrow">Reservas</div>
-        <h2 id="h-cta">¿Cuántos viajan?</h2>
+        <div class="eyebrow">Reservations</div>
+        <h2 id="h-cta">How many are traveling?</h2>
         <p>
-          Cuéntenos cuántas personas son y qué fechas tienen en mente.
-          Le confirmamos disponibilidad y le guiamos a la opción ideal.
-          Se requiere depósito del 25% para garantizar la reserva.
+          Tell us how many people and what dates you have in mind.
+          We'll confirm availability and guide you to the ideal option.
+          A 25% deposit is required to guarantee the reservation.
         </p>
         <div class="cta-actions">
-          <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20en%20Hoster%C3%ADa%20Oceanic.%20Somos%20____%20personas%20y%20queremos%20ir%20el%20____."
-            class="btn btn-wa" aria-label="Consultar disponibilidad" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20at%20Oceanic%20Hoster%C3%ADa.%20We%20are%20____%20people%20and%20want%20to%20go%20on%20____."
+            class="btn btn-wa" aria-label="Check availability" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
               aria-hidden="true">
               <path
@@ -1774,45 +1726,44 @@
       </div>
     </section>
   </main>
-  <!--   FOOTER -->
+  <!--  FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo-wrap">
-            <img src="img/logo-full-sf.webp" alt="Logo Hostería Oceanic" width="130" height="39" loading="lazy">
+            <img src="../img/logo-full-sf.webp" alt="Oceanic Hostería logo" width="130" height="39" loading="lazy">
           </div>
-          <p>Hostería familiar frente al mar en Puerto López,
-            Manabí, Ecuador. Hospedaje con piscina,
-            restaurante y acceso a excursiones del
-            Parque Nacional Machalilla.</p>
+          <p>Family-run beachfront lodge in Puerto López,
+            Manabí, Ecuador. Lodging with a pool,
+            restaurant and access to excursions in
+            Machalilla National Park.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/oceanichosteria/" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.facebook.com/oceanichosteria" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://www.tiktok.com/@hosteriaoceanic" target="_blank" rel="noopener noreferrer">TikTok</a>
           </div>
         </div>
-
         <div>
-          <p class="footer-heading">Contacto</p>
+          <p class="footer-heading">Contact</p>
           <div class="footer-contact">
             <a href="tel:+593995930635">+593 99 593 0635</a>
-            <span>Malecón Julio Izurieta S/N<br>Sector norte, Puerto López<br>Manabí, Ecuador</span>
-            <span>Check-in: 14:00 h · Check-out: 11:00 h</span>
-            <span>Desayuno: 08:00 a 10:00 h</span>
+            <span>Malecón Julio Izurieta S/N<br>North sector, Puerto López<br>Manabí, Ecuador</span>
+            <span>Check-in: 2:00 PM · Check-out: 11:00 AM</span>
+            <span>Breakfast: 8:00 to 10:00 AM</span>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Hostería Oceanic · Todos los derechos reservados</span>
-        <span>Diseñado y desarrollado por <a href="https://www.cirujanadigital.com" class="cd" target="_blank"
+        <span>© 2026 Oceanic Hostería · All rights reserved</span>
+        <span>Designed and developed by <a href="https://www.cirujanadigital.com" class="cd" target="_blank"
             rel="noopener noreferrer">Cirujana Digital</a></span>
       </div>
     </div>
   </footer>
-  <!-- ── WHATSAPP FLOTANTE ──────────────────────────── -->
-  <a href="https://wa.me/593995930635?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20en%20Hoster%C3%ADa%20Oceanic"
-    class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar Hostería Oceanic por WhatsApp">
+  <!-- ── FLOATING WHATSAPP ── -->
+  <a href="https://wa.me/593995930635?text=Hi%2C%20I%27d%20like%20to%20check%20availability%20at%20Oceanic%20Hoster%C3%ADa"
+    class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contact Oceanic Hostería via WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -1820,7 +1771,7 @@
         d="M12 0C5.373 0 0 5.373 0 12c0 2.117.551 4.103 1.516 5.825L0 24l6.335-1.496A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.016-1.376l-.36-.214-3.732.881.898-3.634-.235-.373A9.818 9.818 0 1 1 12 21.818z" />
     </svg>
   </a>
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
 </body>
 
 </html>
