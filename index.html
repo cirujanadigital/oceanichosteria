@@ -25,6 +25,7 @@
   <link rel="alternate" hreflang="es" href="https://www.oceanichosteria.com">
   <link rel="alternate" hreflang="en" href="https://www.oceanichosteria.com/en">
   <link rel="alternate" hreflang="x-default" href="https://www.oceanichosteria.com">
+  <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
 
   <!-- CSS crítico inline -->
   <style>
@@ -335,7 +336,10 @@
       z-index: 0;
     }
   </style>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="style.css">
+  </noscript>
   <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w"
     imagesizes="100vw">
 
@@ -507,9 +511,8 @@
     <header class="nav" role="banner" id="nav">
       <div class="nav-inner">
         <a href="#" class="nav-logo" aria-label="Hostería Oceanic — Inicio">
-          <img src="img/logo.webp" alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140" height="78"
-            loading="eager" decoding="sync">
-
+          <img src="img/logo-sm.webp" alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140" height="78"
+            loading="eager" decoding="async">
         </a>
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
