@@ -82,6 +82,8 @@
       height: 100%;
       object-fit: cover;
       object-position: center 30%;
+      /* Reserva espacio antes de que cargue — elimina CLS */
+      aspect-ratio: 1920 / 1080;
     }
 
     /* Overlay degradado oscuro — legibilidad del texto */
@@ -336,10 +338,7 @@
       z-index: 0;
     }
   </style>
-  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="style.css">
-  </noscript>
+  <link rel="stylesheet" href="style.css">
   <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w"
     imagesizes="100vw">
 
@@ -392,7 +391,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.5",
-        "reviewCount": "350+",
+        "reviewCount": "350",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -511,8 +510,9 @@
     <header class="nav" role="banner" id="nav">
       <div class="nav-inner">
         <a href="#" class="nav-logo" aria-label="Hostería Oceanic — Inicio">
-          <img src="img/logo-sm.webp" alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140" height="78"
-            loading="eager" decoding="async">
+          <img src="img/logo-sm.webp" srcset="img/logo-sm-220.webp 220w, img/logo-sm-440.webp 440w" sizes="140px"
+            alt="Logo Hostería Oceanic — Para Vivir Buenos Momentos" width="140" height="78" loading="eager"
+            decoding="async">
         </a>
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
@@ -560,7 +560,7 @@
         <img id="heroImg" src="img/hero-oceanic-large.webp"
           srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w" sizes="100vw"
           alt="Vista aérea de Hostería Oceanic — cabañas con techos de teja, piscina azul y jardines tropicales frente al Pacífico en Puerto López, Manabí, Ecuador"
-          width="1920" height="1080" fetchpriority="high" decoding="sync">
+          width="1920" height="1080" fetchpriority="high" decoding="sync" style="aspect-ratio:1920/1080;">
         <div class="hero-overlay"></div>
       </div>
 
@@ -1187,9 +1187,10 @@
       <div class="container">
         <div class="servicios-wrap">
           <div class="servicios-img">
-            <img src="img/piscina.webp"
+            <img src="img/piscina.webp" srcset="img/piscina-748.webp 748w, img/piscina-1496.webp 1496w"
+              sizes="(max-width: 800px) calc(100vw - 2rem), 748px"
               alt="Piscina climatizada en temporada de frío de Hostería Oceanic rodeada de jardines tropicales en Puerto López, Manabí, Ecuador"
-              width="900" height="600" loading="lazy" decoding="async">
+              width="748" height="499" loading="lazy" decoding="async">
           </div>
           <div>
             <div class="eyebrow">Incluido en toda estadía</div>

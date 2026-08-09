@@ -123,7 +123,7 @@ h3 {
 }
 h1 {
   font-size: clamp(2.4rem, 5.5vw, 3.75rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.6rem);
@@ -132,7 +132,6 @@ h2 {
 h3 {
   font-size: var(--t-xl);
   font-weight: 500;
-  font-style: italic;
 }
 p {
   max-width: 62ch;
@@ -1049,7 +1048,7 @@ p {
 .room-name {
   font-family: var(--font-display);
   font-size: var(--t-xl);
-  font-style: italic;
+
   margin-bottom: 0.3rem;
 }
 .room-cap {
@@ -1117,7 +1116,7 @@ p {
   color: var(--text-soft);
   margin-top: -0.2rem;
   margin-bottom: 0.9rem;
-  font-style: italic;
+
   max-width: none;
 }
 /*    11. SERVICIOS */
@@ -1276,7 +1275,7 @@ p {
 }
 
 .hol-stat-num {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: var(--font-display);
   font-size: 2rem;
   color: var(--sun);
   line-height: 1;
@@ -1513,7 +1512,6 @@ p {
   color: var(--text);
   line-height: 1.65;
   margin-bottom: 0.75rem;
-  font-style: italic;
 }
 .rev-author {
   font-size: var(--t-xs);
@@ -1613,7 +1611,7 @@ details.faq[open] summary::after {
 }
 .cta-sec h2 {
   color: #fff;
-  font-style: italic;
+
   margin-bottom: 0.75rem;
 }
 .cta-sec > .container > p {
