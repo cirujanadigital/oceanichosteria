@@ -58,19 +58,15 @@
       background: var(--white)
     }
 
-    /* ══════════════════════════════════════════════════════════
-   HERO — layout tipo Neutralia, estilo Oceanic
-══════════════════════════════════════════════════════════ */
+    /*    HERO */
 
     .hero {
       position: relative;
       overflow: hidden;
       padding-block: clamp(5rem, 12vw, 8rem);
       padding-top: calc(66px + clamp(3rem, 8vw, 5rem));
-      /* compensa nav fijo */
     }
 
-    /* Imagen de fondo */
     .hero-bg {
       position: absolute;
       inset: 0;
@@ -82,11 +78,9 @@
       height: 100%;
       object-fit: cover;
       object-position: center 30%;
-      /* Reserva espacio antes de que cargue — elimina CLS */
       aspect-ratio: 1920 / 1080;
     }
 
-    /* Overlay degradado oscuro — legibilidad del texto */
     .hero-overlay {
       position: absolute;
       inset: 0;
@@ -270,7 +264,7 @@
       overflow: hidden;
     }
 
-    /* Marco decorativo: doble anillo tipo Neutralia */
+    /* Marco decorativo */
     .hero-circle::before,
     .hero-circle::after {
       content: '';
@@ -316,7 +310,6 @@
       bottom: 0;
       right: 0;
       z-index: 2;
-      /* Acento: anillo en azul Oceanic para el segundo */
     }
 
     .hero-circle--bottom::before {
@@ -324,7 +317,6 @@
         0 0 0 8px rgba(91, 158, 201, 0.12);
     }
 
-    /* Conector visual entre los dos círculos — línea curva sutil */
     .hero-circles::after {
       content: '';
       position: absolute;
@@ -338,8 +330,9 @@
       z-index: 0;
     }
   </style>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w"
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
     imagesizes="100vw">
 
   <!-- Schema JSON-LD  -->
@@ -558,7 +551,7 @@
     <section class="hero" aria-labelledby="hero-h1">
       <div class="hero-bg">
         <img id="heroImg" src="img/hero-oceanic-large.webp"
-          srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-large.webp 1920w" sizes="100vw"
+          srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w" sizes="100vw"
           alt="Vista aérea de Hostería Oceanic — cabañas con techos de teja, piscina azul y jardines tropicales frente al Pacífico en Puerto López, Manabí, Ecuador"
           width="1920" height="1080" fetchpriority="high" decoding="sync" style="aspect-ratio:1920/1080;">
         <div class="hero-overlay"></div>
@@ -635,9 +628,9 @@
               aria-label="TikTok de Oceanic Hostería">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5
-             2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01
-             a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34
-             6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+            2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01
+            a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34
+            6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
               </svg>
             </a>
           </div>
