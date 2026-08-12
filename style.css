@@ -173,12 +173,12 @@ p {
 /* Outline blanco (sobre fondos oscuros/foto) */
 .btn-outline {
   background: var(--sun);
-  color: #fff;
-  border: 1.5px solid rgba(255, 255, 255, 0.88);
+  color: #1a1a1a;
+  border: 1.5px solid rgba(0, 0, 0, 0.12);
 }
 .btn-outline:hover {
   background: #f5b349;
-  border-color: #fff;
+  border-color: rgba(0, 0, 0, 0.15);
 }
 /* Outline azul (sobre fondos claros) */
 .btn-sky-outline {
@@ -609,6 +609,13 @@ p {
 .sec-night {
   background: var(--sky-night);
 }
+
+.sec-night .eyebrow {
+  color: rgba(255, 255, 255, 0.82);
+}
+.sec-night .eyebrow::before {
+  background: var(--sun);
+}
 .sec-white {
   background: var(--white);
 }
@@ -627,6 +634,7 @@ p {
 .pillar {
   text-align: center;
   padding: var(--sp-md) var(--sp-sm);
+  min-height: 220px;
 }
 .pillar-dot {
   width: 10px;

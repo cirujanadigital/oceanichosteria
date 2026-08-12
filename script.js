@@ -147,11 +147,28 @@
   });
 })();
 
-/* ── 4. Video: solo cargar en desktop (≥ 768 px) ─────────── */
+/* ── 4. Video: lazy load por IntersectionObserver (solo desktop ≥ 768px) ─────── */
 (function () {
   var video = document.getElementById('heroVideo');
   if (!video) return;
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth < 768) return; /* no cargar en mobile */
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var source = document.createElement('source');
+          source.src = '/img/video-dron.mp4';
+          source.type = 'video/mp4';
+          video.appendChild(source);
+          video.load();
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' }); /* empieza a cargar 200px antes de que sea visible */
+    observer.observe(video);
+  } else {
+    /* Fallback para navegadores sin IntersectionObserver */
     var source = document.createElement('source');
     source.src = '/img/video-dron.mp4';
     source.type = 'video/mp4';

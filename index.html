@@ -65,12 +65,14 @@
       overflow: hidden;
       padding-block: clamp(5rem, 12vw, 8rem);
       padding-top: calc(66px + clamp(3rem, 8vw, 5rem));
+      min-height: clamp(480px, 56vw, 680px);
     }
 
     .hero-bg {
       position: absolute;
       inset: 0;
       z-index: 0;
+      background: #081e2d;
     }
 
     .hero-bg img {
@@ -333,7 +335,7 @@
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="style.css"></noscript>
   <link rel="preload" as="image" imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
-    imagesizes="100vw">
+    imagesizes="100vw" fetchpriority="high">
 
   <!-- Schema JSON-LD  -->
 
@@ -550,10 +552,10 @@
     <!--   HERO -->
     <section class="hero" aria-labelledby="hero-h1">
       <div class="hero-bg">
-        <img id="heroImg" src="img/hero-oceanic-large.webp"
+        <img id="heroImg" src="img/hero-oceanic-md.webp"
           srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w" sizes="100vw"
           alt="Vista aérea de Hostería Oceanic — cabañas con techos de teja, piscina azul y jardines tropicales frente al Pacífico en Puerto López, Manabí, Ecuador"
-          width="1920" height="1080" fetchpriority="high" decoding="sync" style="aspect-ratio:1920/1080;">
+          width="1920" height="1080" fetchpriority="high" loading="eager" decoding="sync" style="aspect-ratio:1920/1080;">
         <div class="hero-overlay"></div>
       </div>
 
