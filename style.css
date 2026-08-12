@@ -333,8 +333,9 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(1rem, 12vw, 8rem);
+  padding-block: clamp(5rem, 12vw, 8rem);
   padding-top: calc(66px + clamp(3rem, 8vw, 5rem));
+  min-height: clamp(480px, 56vw, 680px);
 }
 
 /* Imagen de fondo */
