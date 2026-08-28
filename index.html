@@ -25,10 +25,11 @@
   <link rel="alternate" hreflang="es" href="https://www.oceanichosteria.com">
   <link rel="alternate" hreflang="en" href="https://www.oceanichosteria.com/en">
   <link rel="alternate" hreflang="x-default" href="https://www.oceanichosteria.com">
-  <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'; this.onload=null;">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
   <link rel="preload" as="image"
-    imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
+    imagesrcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-750.webp 750w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
     imagesizes="100vw" fetchpriority="high">
 
   <!-- Schema JSON-LD  -->
@@ -247,7 +248,7 @@
     <section class="hero" aria-labelledby="hero-h1">
       <div class="hero-bg">
         <img id="heroImg" src="img/hero-oceanic-md.webp"
-          srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
+          srcset="/img/hero-oceanic-sm.webp 640w, /img/hero-oceanic-750.webp 750w, /img/hero-oceanic-md.webp 1280w, /img/hero-oceanic-large.webp 1920w"
           sizes="100vw"
           alt="Vista aérea de Hostería Oceanic — cabañas con techos de teja, piscina azul y jardines tropicales frente al Pacífico en Puerto López, Manabí, Ecuador"
           width="1920" height="1080" fetchpriority="high" loading="eager" decoding="sync"
