@@ -42,6 +42,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -1347,11 +1348,11 @@ p {
 .rest-pdf-links a {
   font-size: var(--t-sm);
   font-weight: 600;
-  color: var(--sky);
+  color: var(--sky-deep);
   transition: color var(--ease);
 }
 .rest-pdf-links a:hover {
-  color: var(--sky-deep);
+  color: var(--sky-night);
 }
 .rest-pdf-links span {
   font-size: var(--t-xs);

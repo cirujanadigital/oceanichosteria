@@ -4,19 +4,32 @@
   var menu = document.getElementById('navMobile');
   if (!toggle || !menu) return;
 
-  toggle.addEventListener('click', function () {
-    var isOpen = menu.classList.toggle('open');
+  var labelOpen = toggle.getAttribute('data-label-open') || 'Abrir menú';
+  var labelClose = toggle.getAttribute('data-label-close') || 'Cerrar menú';
+
+  function setOpen(isOpen) {
+    menu.classList.toggle('open', isOpen);
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    toggle.setAttribute('aria-label', isOpen ? labelClose : labelOpen);
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(!menu.classList.contains('open'));
   });
 
   menu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
-      menu.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
+      setOpen(false);
     });
   });
-})();
 
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
 /* ── 2. Carruseles ─────────────────────────────────────── */
 (function () {
   function initCarousel(root, opts) {
@@ -152,7 +165,8 @@
   var video = document.getElementById('heroVideo');
   if (!video) return;
   var vw = document.documentElement.clientWidth;
-  if (vw < 768) return; /* no cargar en mobile */
+  if (vw < 768) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(
